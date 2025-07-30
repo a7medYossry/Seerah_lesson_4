@@ -24,12 +24,15 @@
     --lm-mindmap-border: #007bff;
 
     /* Dark Mode */
-    --dm-bg: #1a1d24; /* Darker blue-grey */
+    --dm-bg: #1a1d24;
+    /* Darker blue-grey */
     --dm-text: #e0e0e0;
-    --dm-primary: #58a6ff; /* Lighter blue for dark mode */
+    --dm-primary: #58a6ff;
+    /* Lighter blue for dark mode */
     --dm-secondary: #8b949e;
     --dm-accent: #3fb950;
-    --dm-card-bg: #222730; /* Darker card */
+    --dm-card-bg: #222730;
+    /* Darker card */
     --dm-border: #444c56;
     --dm-quote-bg: #2c313a;
     --dm-hadith-bg: #1c2d3e;
@@ -72,7 +75,8 @@ body.light-mode header {
 }
 
 body.dark-mode header {
-    background-color: rgba(34, 39, 48, 0.95); /* --dm-card-bg with opacity */
+    background-color: rgba(34, 39, 48, 0.95);
+    /* --dm-card-bg with opacity */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -91,17 +95,26 @@ body.dark-mode header {
     font-weight: bold;
     font-family: var(--font-headings);
 }
-body.light-mode .nav-logo { color: var(--lm-primary); }
-body.dark-mode .nav-logo { color: var(--dm-primary); }
+
+body.light-mode .nav-logo {
+    color: var(--lm-primary);
+}
+
+body.dark-mode .nav-logo {
+    color: var(--dm-primary);
+}
 
 
 #nav-menu {
     list-style: none;
     display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 #nav-menu li {
-    position: relative; /* For dropdown positioning */
+    position: relative;
+    /* For dropdown positioning */
 }
 
 #nav-menu li a {
@@ -110,11 +123,24 @@ body.dark-mode .nav-logo { color: var(--dm-primary); }
     display: block;
     transition: color 0.2s ease, background-color 0.2s ease;
 }
-body.light-mode #nav-menu li a { color: var(--lm-text); }
-body.dark-mode #nav-menu li a { color: var(--dm-text); }
 
-body.light-mode #nav-menu li a:hover { color: var(--lm-primary); background-color: #f0f0f0; }
-body.dark-mode #nav-menu li a:hover { color: var(--dm-primary); background-color: #333944; }
+body.light-mode #nav-menu li a {
+    color: var(--lm-text);
+}
+
+body.dark-mode #nav-menu li a {
+    color: var(--dm-text);
+}
+
+body.light-mode #nav-menu li a:hover {
+    color: var(--lm-primary);
+    background-color: #f0f0f0;
+}
+
+body.dark-mode #nav-menu li a:hover {
+    color: var(--dm-primary);
+    background-color: #333944;
+}
 
 
 /* Dropdown Menu */
@@ -122,20 +148,28 @@ body.dark-mode #nav-menu li a:hover { color: var(--dm-primary); background-color
     display: none;
     position: absolute;
     min-width: 250px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    max-height: 70vh; /* Limit height and make scrollable */
+    max-height: 70vh;
+    /* Limit height and make scrollable */
     overflow-y: auto;
 }
-body.light-mode #nav-menu .dropdown-content { background-color: var(--lm-card-bg); }
-body.dark-mode #nav-menu .dropdown-content { background-color: var(--dm-card-bg); }
+
+body.light-mode #nav-menu .dropdown-content {
+    background-color: var(--lm-card-bg);
+}
+
+body.dark-mode #nav-menu .dropdown-content {
+    background-color: var(--dm-card-bg);
+}
 
 
 #nav-menu .dropdown-content a {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    white-space: nowrap; /* Prevent wrapping */
+    white-space: nowrap;
+    /* Prevent wrapping */
 }
 
 #nav-menu li.dropdown:hover .dropdown-content {
@@ -150,10 +184,12 @@ body.dark-mode #nav-menu .dropdown-content { background-color: var(--dm-card-bg)
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 body.light-mode #theme-switcher {
     background-color: var(--lm-primary);
     color: white;
 }
+
 body.dark-mode #theme-switcher {
     background-color: var(--dm-primary);
     color: var(--dm-bg);
@@ -170,10 +206,13 @@ main {
     margin-bottom: 2.5rem;
     padding: 1.5rem;
     border-radius: 8px;
-    opacity: 0; /* For fade-in animation */
-    transform: translateY(20px); /* For fade-in animation */
+    opacity: 0;
+    /* For fade-in animation */
+    transform: translateY(20px);
+    /* For fade-in animation */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
 .content-section.visible {
     opacity: 1;
     transform: translateY(0);
@@ -181,42 +220,94 @@ main {
 
 body.light-mode .content-section {
     background-color: var(--lm-card-bg);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-body.dark-mode .content-section {
-    background-color: var(--dm-card-bg);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-h1, h2, h3, h4, h5, h6 {
+body.dark-mode .content-section {
+    background-color: var(--dm-card-bg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-headings);
     margin-bottom: 0.75rem;
     margin-top: 1rem;
 }
-body.light-mode h1, body.light-mode h2, body.light-mode h3 { color: var(--lm-primary); }
-body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--dm-primary); }
 
-h1 { font-size: 2.2rem; text-align: center; margin-bottom: 1.5rem;}
-h2 { font-size: 1.8rem; border-bottom: 2px solid; padding-bottom: 0.3rem; }
-body.light-mode h2 { border-color: var(--lm-accent); }
-body.dark-mode h2 { border-color: var(--dm-accent); }
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3 {
+    color: var(--lm-primary);
+}
 
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.3rem; }
-body.light-mode h4 { color: var(--lm-secondary); }
-body.dark-mode h4 { color: var(--dm-secondary); }
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: var(--dm-primary);
+}
 
-h5 { font-size: 1.1rem; font-style: italic;}
-h6 { font-size: 1rem; font-weight: normal; font-style: italic; }
+h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid;
+    padding-bottom: 0.3rem;
+}
+
+body.light-mode h2 {
+    border-color: var(--lm-accent);
+}
+
+body.dark-mode h2 {
+    border-color: var(--dm-accent);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+body.light-mode h4 {
+    color: var(--lm-secondary);
+}
+
+body.dark-mode h4 {
+    color: var(--dm-secondary);
+}
+
+h5 {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+}
 
 
 p {
     margin-bottom: 1rem;
 }
 
-ul, ol {
+ul,
+ol {
     margin-bottom: 1rem;
-    padding-left: 1.5rem; /* Indent list items */
+    padding-left: 1.5rem;
+    /* Indent list items */
 }
 
 li {
@@ -226,8 +317,14 @@ li {
 strong {
     font-weight: bold;
 }
-body.light-mode strong { color: var(--lm-primary); }
-body.dark-mode strong { color: var(--dm-primary); }
+
+body.light-mode strong {
+    color: var(--lm-primary);
+}
+
+body.dark-mode strong {
+    color: var(--dm-primary);
+}
 
 
 /* Quotes and Specific Text Styling */
@@ -241,25 +338,47 @@ blockquote {
 }
 
 .quran-verse {
-    border-left-color: var(--lm-accent); /* Green for Quran */
+    border-left-color: var(--lm-accent);
+    /* Green for Quran */
 }
-body.light-mode .quran-verse { background-color: var(--lm-quote-bg); }
-body.dark-mode .quran-verse { background-color: var(--dm-quote-bg); border-left-color: var(--dm-accent); }
+
+body.light-mode .quran-verse {
+    background-color: var(--lm-quote-bg);
+}
+
+body.dark-mode .quran-verse {
+    background-color: var(--dm-quote-bg);
+    border-left-color: var(--dm-accent);
+}
 
 
 .hadith-text {
-    border-left-color: var(--lm-secondary); /* Grey for Hadith */
+    border-left-color: var(--lm-secondary);
+    /* Grey for Hadith */
 }
-body.light-mode .hadith-text { background-color: var(--lm-hadith-bg); }
-body.dark-mode .hadith-text { background-color: var(--dm-hadith-bg); border-left-color: var(--dm-secondary); }
+
+body.light-mode .hadith-text {
+    background-color: var(--lm-hadith-bg);
+}
+
+body.dark-mode .hadith-text {
+    background-color: var(--dm-hadith-bg);
+    border-left-color: var(--dm-secondary);
+}
 
 
 .arabic-term {
     font-style: italic;
     font-weight: bold;
 }
-body.light-mode .arabic-term { color: #555; }
-body.dark-mode .arabic-term { color: #bbb; }
+
+body.light-mode .arabic-term {
+    color: #555;
+}
+
+body.dark-mode .arabic-term {
+    color: #bbb;
+}
 
 
 /* Mind Map Summary Boxes */
@@ -269,23 +388,31 @@ body.dark-mode .arabic-term { color: #bbb; }
     border-radius: 8px;
     border-left: 5px solid;
 }
+
 body.light-mode .mind-map-summary {
     background-color: var(--lm-mindmap-bg);
     border-color: var(--lm-mindmap-border);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
+
 body.dark-mode .mind-map-summary {
     background-color: var(--dm-mindmap-bg);
     border-color: var(--dm-mindmap-border);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .mind-map-summary h4 {
     margin-top: 0;
     font-size: 1.2rem;
 }
-body.light-mode .mind-map-summary h4 { color: var(--lm-primary); }
-body.dark-mode .mind-map-summary h4 { color: var(--dm-primary); }
+
+body.light-mode .mind-map-summary h4 {
+    color: var(--lm-primary);
+}
+
+body.dark-mode .mind-map-summary h4 {
+    color: var(--dm-primary);
+}
 
 
 .mind-map-summary ul {
@@ -299,10 +426,12 @@ footer {
     padding: 2rem;
     margin-top: 2rem;
 }
+
 body.light-mode footer {
     background-color: #e9ecef;
     color: var(--lm-secondary);
 }
+
 body.dark-mode footer {
     background-color: #2c313a;
     color: var(--dm-secondary);
@@ -314,16 +443,23 @@ body.dark-mode footer {
         flex-direction: column;
         align-items: flex-start;
     }
+
     #nav-menu {
         flex-direction: column;
         width: 100%;
         margin-top: 1rem;
+        margin-bottom: 0;
+        padding-left: 0;
     }
+
     #nav-menu li a {
-        padding: 0.8rem 0.2rem; /* Adjust padding for vertical menu */
+        padding: 0.8rem 0.2rem;
+        /* Adjust padding for vertical menu */
     }
+
     #nav-menu .dropdown-content {
-        position: static; /* Dropdowns become part of the flow */
+        position: static;
+        /* Dropdowns become part of the flow */
         box-shadow: none;
         max-height: none;
         overflow-y: visible;
@@ -331,16 +467,45 @@ body.dark-mode footer {
         margin-left: 10px;
         padding-left: 10px;
     }
-    body.light-mode #nav-menu .dropdown-content { border-color: var(--lm-primary); background-color: transparent; }
-    body.dark-mode #nav-menu .dropdown-content { border-color: var(--dm-primary); background-color: transparent; }
+
+    body.light-mode #nav-menu .dropdown-content {
+        border-color: var(--lm-primary);
+        background-color: transparent;
+    }
+
+    body.dark-mode #nav-menu .dropdown-content {
+        border-color: var(--dm-primary);
+        background-color: transparent;
+    }
 
     #nav-menu li.dropdown:hover .dropdown-content {
-        display: block; /* Ensure it stays block */
+        display: block;
+        /* Ensure it stays block */
     }
+
     #theme-switcher {
         margin-top: 1rem;
         align-self: flex-start;
     }
-    h1 { font-size: 1.8rem; }
-    h2 { font-size: 1.5rem; }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.session-content:not(:last-child) {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 3rem;
+}
+
+.dark-mode .session-content:not(:last-child) {
+    border-bottom-color: #444;
+}
+
+.dropdown-content {
+margin-left: -140%;
 }
