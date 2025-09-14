@@ -17,9 +17,17 @@
         <nav id="navbar">
             <div class="nav-logo">Seerah Studies</div>
             <ul id="nav-menu">
-                <!-- Navigation links to jump to each session -->
-                <li><a href="#session4">Session 4: State of the World</a></li>
-                <li><a href="#session5">Session 5: Harbingers of the Dawn</a></li>
+                <li class="dropdown">
+                    <button id="lessons-btn" class="dropbtn">All Lessons ▼</button>
+                    <div id="lessons-dropdown" class="dropdown-content">
+                        <a href="#session4">Session 4: State of the World</a>
+                        <a href="#session5">Session 5: Harbingers of the Dawn</a>
+                        <a href="#session6">Session 6: Before the Commission</a>
+                        <a href="#session7">Session 7: Preludes to Prophethood</a>
+                        <a href="#session8">Session 8: Eve of Revelation</a>
+
+                    </div>
+                </li>
             </ul>
             <button id="theme-switcher">Toggle Theme</button>
         </nav>
@@ -1743,513 +1751,1432 @@
                 <blockquote class="quran-verse">"And We have not sent you, [O Muhammad], except as a mercy to the
                     worlds."<br>(وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ)</blockquote>
             </section>
-            <article id="session6" class="session-content">
-                <section id="s6-s0-introduction" class="content-section">
-                    <h1>Studying the Biography of the Prophet (PBUH): The Sixth Session</h1>
-                    <h2>The Prophetic Biography as a Comprehensive Foundational Methodology: Before the Commission</h2>
+        </article>
+        <article id="session6" class="session-content">
+            <section id="s6-s0-introduction" class="content-section">
+                <h1>Studying the Biography of the Prophet (PBUH): The Sixth Session</h1>
+                <h2>The Prophetic Biography as a Comprehensive Foundational Methodology: Before the Commission</h2>
 
-                    <h3>Introduction: The Prophetic Biography as a Comprehensive Foundational Methodology</h3>
-                    <p>All praise is due to Allah, the Lord of the worlds, and may peace and blessings be upon the Seal
-                        of the Prophets and Messengers, our Prophet Muhammad, and upon his family and all his
-                        companions.</p>
-                    <p>The noble Prophetic Biography (Seerah) represents a complete field of knowledge and a
-                        comprehensive way of life. It transcends the mere historical narration of events to form a
-                        practical embodiment of the principles and high values of Islam. Within its folds, the one
-                        seeking to purify their soul and rectify their heart finds their goal, just as the one aspiring
-                        to noble morals and high aspirations in worship finds their ideal role models. Similarly, it
-                        offers profound lessons in sacrifice and devotion, and in the methodologies of seeking knowledge
-                        and spreading the call to faith.</p>
-                    <p>An in-depth study of the life of the Chosen One, peace and blessings be upon him, provides the
-                        Muslim with a frame of reference that shortens long distances in understanding and applying the
-                        religion. It presents the material of faith and education in its living, practical context,
-                        moving the recipient from the realm of abstract theory to the space of real-world application.
-                        From this perspective, the Prophetic Seerah can be considered a practical translation of the
-                        Holy Qur'an. This was perfectly summarized by the Mother of the Believers, Aisha, may Allah be
-                        pleased with her, when she was asked about the Prophet's character and replied, "His character
-                        was the Qur'an."</p>
-                    <p>The ever-renewing nature of the challenges facing Muslim societies necessitates a rereading and
-                        re-examination of the Seerah from contemporary perspectives. The dilemmas faced by youth
-                        today—from issues of identity and a sense of value alienation to the challenges of intellectual
-                        doubts and material temptations—can find solutions and enlightenment through analyzing his
-                        stances, peace and blessings be upon him, and his methodology of patience, wisdom, and dealing
-                        with reality. In his biography, there is a cure for despair, guidance for the lost, and strength
-                        for the weak. This article analyzes a pivotal stage of his life, peace and blessings be upon
-                        him—the period before his divine commission—to clarify how the details of this phase constituted
-                        a precise divine preparation for the greatest mission entrusted to humanity.</p>
-                </section>
+                <h3>Introduction: The Prophetic Biography as a Comprehensive Foundational Methodology</h3>
+                <p>All praise is due to Allah, the Lord of the worlds, and may peace and blessings be upon the Seal
+                    of the Prophets and Messengers, our Prophet Muhammad, and upon his family and all his
+                    companions.</p>
+                <p>The noble Prophetic Biography (Seerah) represents a complete field of knowledge and a
+                    comprehensive way of life. It transcends the mere historical narration of events to form a
+                    practical embodiment of the principles and high values of Islam. Within its folds, the one
+                    seeking to purify their soul and rectify their heart finds their goal, just as the one aspiring
+                    to noble morals and high aspirations in worship finds their ideal role models. Similarly, it
+                    offers profound lessons in sacrifice and devotion, and in the methodologies of seeking knowledge
+                    and spreading the call to faith.</p>
+                <p>An in-depth study of the life of the Chosen One, peace and blessings be upon him, provides the
+                    Muslim with a frame of reference that shortens long distances in understanding and applying the
+                    religion. It presents the material of faith and education in its living, practical context,
+                    moving the recipient from the realm of abstract theory to the space of real-world application.
+                    From this perspective, the Prophetic Seerah can be considered a practical translation of the
+                    Holy Qur'an. This was perfectly summarized by the Mother of the Believers, Aisha, may Allah be
+                    pleased with her, when she was asked about the Prophet's character and replied, "His character
+                    was the Qur'an."</p>
+                <p>The ever-renewing nature of the challenges facing Muslim societies necessitates a rereading and
+                    re-examination of the Seerah from contemporary perspectives. The dilemmas faced by youth
+                    today—from issues of identity and a sense of value alienation to the challenges of intellectual
+                    doubts and material temptations—can find solutions and enlightenment through analyzing his
+                    stances, peace and blessings be upon him, and his methodology of patience, wisdom, and dealing
+                    with reality. In his biography, there is a cure for despair, guidance for the lost, and strength
+                    for the weak. This article analyzes a pivotal stage of his life, peace and blessings be upon
+                    him—the period before his divine commission—to clarify how the details of this phase constituted
+                    a precise divine preparation for the greatest mission entrusted to humanity.</p>
+            </section>
 
-                <section id="s6-s1-orphanhood" class="content-section">
-                    <h3>The Birth of the Orphan: Deep Dimensions and Meanings</h3>
-                    <p>The Prophet Muhammad, peace and blessings be upon him, was born an orphan. His father, Abdullah,
-                        passed away while he was still in his mother's womb. This event was not merely a painful
-                        personal tragedy but a divine decree filled with profound wisdom and deep dimensions, for every
-                        detail in the lives of the prophets carries a specific message. These dimensions can be detailed
-                        as follows:</p>
+            <section id="s6-s1-orphanhood" class="content-section">
+                <h3>The Birth of the Orphan: Deep Dimensions and Meanings</h3>
+                <p>The Prophet Muhammad, peace and blessings be upon him, was born an orphan. His father, Abdullah,
+                    passed away while he was still in his mother's womb. This event was not merely a painful
+                    personal tragedy but a divine decree filled with profound wisdom and deep dimensions, for every
+                    detail in the lives of the prophets carries a specific message. These dimensions can be detailed
+                    as follows:</p>
 
-                    <h4>1. Preserving and Purifying the Natural Disposition (Fitrah)</h4>
-                    <p>The early death of his father formed a shield of divine protection for his sound nature,
-                        isolating him from the direct influence of the polytheistic environment that dominated Meccan
-                        society. Although Mecca held religious significance as a center of pilgrimage, it was steeped in
-                        the practices of ignorance (Jahiliyyah), from the worship of idols set up around the Kaaba to
-                        the prevalence of unjust economic practices like gambling and usury, and the dominance of
-                        tribalism that legitimized bloodshed. The absence of a polytheistic father from the Prophet's
-                        life, peace be upon him, prevented the transmission of these beliefs and practices during his
-                        formative years—the period when a child absorbs the values of his surroundings indiscriminately.
-                        His father had died upon the religion of his forefathers, which was the polytheism that Abd
-                        al-Muttalib followed. This is evidenced by the stance of his uncle, Abu Talib, who, on his
-                        deathbed, refused the Prophet's invitation to Islam, declaring he was "on the religion of Abd
-                        al-Muttalib." Had that religion been pure monotheism, this declaration would not have been a
-                        rejection of the call of Islam. Therefore, his orphanhood was a divine measure to keep his
-                        nature pure from any negative creedal tarnish. He was raised under Allah's protection; he never
-                        prostrated to an idol, never touched alcohol, and never participated in any of their frivolous
-                        or sinful gatherings. This meaning is reflected in Allah's words:
-                    <blockquote class="quran-verse">"Did He not find you an orphan and give [you] refuge?" (Qur'an,
-                        Ad-Duha: 6)</blockquote> This refuge was a comprehensive creedal and spiritual shelter,
-                    preserving his heart and mind from the pollutions of ignorance, even before it was a physical
-                    shelter providing him with care.</p>
+                <h4>1. Preserving and Purifying the Natural Disposition (Fitrah)</h4>
+                <p>The early death of his father formed a shield of divine protection for his sound nature,
+                    isolating him from the direct influence of the polytheistic environment that dominated Meccan
+                    society. Although Mecca held religious significance as a center of pilgrimage, it was steeped in
+                    the practices of ignorance (Jahiliyyah), from the worship of idols set up around the Kaaba to
+                    the prevalence of unjust economic practices like gambling and usury, and the dominance of
+                    tribalism that legitimized bloodshed. The absence of a polytheistic father from the Prophet's
+                    life, peace be upon him, prevented the transmission of these beliefs and practices during his
+                    formative years—the period when a child absorbs the values of his surroundings indiscriminately.
+                    His father had died upon the religion of his forefathers, which was the polytheism that Abd
+                    al-Muttalib followed. This is evidenced by the stance of his uncle, Abu Talib, who, on his
+                    deathbed, refused the Prophet's invitation to Islam, declaring he was "on the religion of Abd
+                    al-Muttalib." Had that religion been pure monotheism, this declaration would not have been a
+                    rejection of the call of Islam. Therefore, his orphanhood was a divine measure to keep his
+                    nature pure from any negative creedal tarnish. He was raised under Allah's protection; he never
+                    prostrated to an idol, never touched alcohol, and never participated in any of their frivolous
+                    or sinful gatherings. This meaning is reflected in Allah's words:
+                <blockquote class="quran-verse">"Did He not find you an orphan and give [you] refuge?" (Qur'an,
+                    Ad-Duha: 6)</blockquote> This refuge was a comprehensive creedal and spiritual shelter,
+                preserving his heart and mind from the pollutions of ignorance, even before it was a physical
+                shelter providing him with care.</p>
 
-                    <h4>2. A Purely Divine Upbringing</h4>
-                    <p>Divine wisdom dictated that the Prophet's upbringing and care be attributed to Allah alone, so
-                        that no human could claim credit or favor in his nurturing. This preempts any potential claim
-                        from someone who might say, "It was I who taught Muhammad and refined his character." He grew up
-                        as a unique "divine creation," prepared to carry the greatest trust without any earthly
-                        influence to which credit could be ascribed. Allah Almighty was the one who undertook his
-                        discipline and care. Every event he experienced, every personality he interacted with, and every
-                        trial he faced was part of a divine educational curriculum decreed with profound wisdom. His
-                        transfer from the care of his loving grandfather to his poor uncle, and from the life of Mecca
-                        to the desert of Banu Sa'd, were all stations in this divine methodology that polished his
-                        character. The purpose was that Allah's favor upon him would be complete and perfect, and that
-                        the Prophet, peace be upon him, would be in a state of complete servitude and gratitude to his
-                        Lord alone, not owing any essential favor to anyone else. This preparation also blocks any
-                        future suspicion that the wisdom and legislation he brought were the product of an acquired
-                        human culture; rather, it was pure revelation from Allah, a fact reinforced by his being
-                        unlettered, unable to read or write.</p>
+                <h4>2. A Purely Divine Upbringing</h4>
+                <p>Divine wisdom dictated that the Prophet's upbringing and care be attributed to Allah alone, so
+                    that no human could claim credit or favor in his nurturing. This preempts any potential claim
+                    from someone who might say, "It was I who taught Muhammad and refined his character." He grew up
+                    as a unique "divine creation," prepared to carry the greatest trust without any earthly
+                    influence to which credit could be ascribed. Allah Almighty was the one who undertook his
+                    discipline and care. Every event he experienced, every personality he interacted with, and every
+                    trial he faced was part of a divine educational curriculum decreed with profound wisdom. His
+                    transfer from the care of his loving grandfather to his poor uncle, and from the life of Mecca
+                    to the desert of Banu Sa'd, were all stations in this divine methodology that polished his
+                    character. The purpose was that Allah's favor upon him would be complete and perfect, and that
+                    the Prophet, peace be upon him, would be in a state of complete servitude and gratitude to his
+                    Lord alone, not owing any essential favor to anyone else. This preparation also blocks any
+                    future suspicion that the wisdom and legislation he brought were the product of an acquired
+                    human culture; rather, it was pure revelation from Allah, a fact reinforced by his being
+                    unlettered, unable to read or write.</p>
 
-                    <h4>3. Comprehensive Human Consolation</h4>
-                    <p>In the orphanhood of the best of creation, peace and blessings be upon him, lies a deep
-                        consolation for every orphan and every pained soul across generations. No one should think that
-                        material deprivation or worldly tribulations are a sign of Allah's wrath or a person's lowliness
-                        in the eyes of their Creator. The most honorable of creation tasted the bitterness of being an
-                        orphan, serving as a message to everyone afflicted that a person's value with Allah is not
-                        measured by what they are given or denied in this world, but by their state with their Lord and
-                        the stations of patience and contentment they reach. It is a message of hope to everyone who has
-                        lost a support system in their life, that Allah is the All-Sufficient and the true support, and
-                        that orphanhood is not necessarily the end of the road but can be the starting point for a
-                        divine grant and a great gift. This consolation was later manifested in his practical conduct.
-                        When his cousin, Ja'far ibn Abi Talib, was martyred in the Battle of Mu'tah, the Prophet, peace
-                        be upon him, went to his house, embraced his children, wiped their heads, and his eyes filled
-                        with tears. He became a father to them after their father, translating the highest meanings of
-                        mercy and responsibility. His personal experience with orphanhood made him the closest in
-                        feeling to this group, so his care for them stemmed from a deep understanding of their
-                        psychological needs before their material ones.</p>
+                <h4>3. Comprehensive Human Consolation</h4>
+                <p>In the orphanhood of the best of creation, peace and blessings be upon him, lies a deep
+                    consolation for every orphan and every pained soul across generations. No one should think that
+                    material deprivation or worldly tribulations are a sign of Allah's wrath or a person's lowliness
+                    in the eyes of their Creator. The most honorable of creation tasted the bitterness of being an
+                    orphan, serving as a message to everyone afflicted that a person's value with Allah is not
+                    measured by what they are given or denied in this world, but by their state with their Lord and
+                    the stations of patience and contentment they reach. It is a message of hope to everyone who has
+                    lost a support system in their life, that Allah is the All-Sufficient and the true support, and
+                    that orphanhood is not necessarily the end of the road but can be the starting point for a
+                    divine grant and a great gift. This consolation was later manifested in his practical conduct.
+                    When his cousin, Ja'far ibn Abi Talib, was martyred in the Battle of Mu'tah, the Prophet, peace
+                    be upon him, went to his house, embraced his children, wiped their heads, and his eyes filled
+                    with tears. He became a father to them after their father, translating the highest meanings of
+                    mercy and responsibility. His personal experience with orphanhood made him the closest in
+                    feeling to this group, so his care for them stemmed from a deep understanding of their
+                    psychological needs before their material ones.</p>
 
-                    <h4>4. Nurturing Mercy in the Prophetic Heart</h4>
-                    <p>He who experiences pain and deprivation is the most capable of sensing the pain and suffering of
-                        the deprived. Accordingly, the Prophet's orphanhood was a fundamental reason for him growing up
-                        with a tender heart, merciful to the weak and the needy. This mercy was not just a personal
-                        emotion; after his commission, it transformed into a complete legislative system that protects
-                        the orphan, preserves their rights, and commands kindness towards them. This is evident in
-                        Allah's words addressing him:
-                    <blockquote class="quran-verse">"So as for the orphan, do not oppress [him]. And as for the
-                        petitioner, do not repel [him]." (Qur'an, Ad-Duha: 9-10)</blockquote> This is a direct
-                    instruction that links Allah's blessing upon him during his orphanhood with his duty towards those
-                    in a similar situation. A leader who has never known need might legislate laws devoid of feeling for
-                    people's suffering. But the Prophet's legislations, peace be upon him, were imbued with mercy
-                    because they stemmed from a heart that had tasted pain. He elevated the status of sponsoring an
-                    orphan to the highest ranks when he said, <blockquote class="hadith-text">"I and the one who
-                        sponsors an orphan will be like this in Paradise,"</blockquote> and he gestured with his index
-                    and middle fingers, indicating the highest degree of closeness and companionship in Paradise. It is
-                    as if the sponsor of an orphan is emulating the greatest act Allah Almighty performed for His orphan
-                    Prophet: providing refuge and care.</p>
-                    <p>As for his mother, she lived until he was six years old, giving him in these formative years a
-                        concentrated dose of affection and tenderness, an indispensable psychological element in
-                        building a sound and balanced personality. Her survival for this period was for a wisdom, just
-                        as her death afterward was for another wisdom. Glory be to Him who planned his affairs with the
-                        most minute detail.</p>
-                </section>
-                <div class="mind-map-summary">
-                    <h4>Recap: The Wisdom of His Orphanhood</h4>
-                    <ul>
-                        <li><strong>Preservation of Fitrah:</strong> Shielded him from polytheistic influences.</li>
-                        <li><strong>Divine Upbringing:</strong> Ensured his development was solely by Allah's design.
-                        </li>
-                        <li><strong>Human Consolation:</strong> A message of hope for every orphan and afflicted person.
-                        </li>
-                        <li><strong>Nurturing Mercy:</strong> His experience cultivated deep compassion for the weak.
-                        </li>
-                    </ul>
-                </div>
+                <h4>4. Nurturing Mercy in the Prophetic Heart</h4>
+                <p>He who experiences pain and deprivation is the most capable of sensing the pain and suffering of
+                    the deprived. Accordingly, the Prophet's orphanhood was a fundamental reason for him growing up
+                    with a tender heart, merciful to the weak and the needy. This mercy was not just a personal
+                    emotion; after his commission, it transformed into a complete legislative system that protects
+                    the orphan, preserves their rights, and commands kindness towards them. This is evident in
+                    Allah's words addressing him:
+                <blockquote class="quran-verse">"So as for the orphan, do not oppress [him]. And as for the
+                    petitioner, do not repel [him]." (Qur'an, Ad-Duha: 9-10)</blockquote> This is a direct
+                instruction that links Allah's blessing upon him during his orphanhood with his duty towards those
+                in a similar situation. A leader who has never known need might legislate laws devoid of feeling for
+                people's suffering. But the Prophet's legislations, peace be upon him, were imbued with mercy
+                because they stemmed from a heart that had tasted pain. He elevated the status of sponsoring an
+                orphan to the highest ranks when he said, <blockquote class="hadith-text">"I and the one who
+                    sponsors an orphan will be like this in Paradise,"</blockquote> and he gestured with his index
+                and middle fingers, indicating the highest degree of closeness and companionship in Paradise. It is
+                as if the sponsor of an orphan is emulating the greatest act Allah Almighty performed for His orphan
+                Prophet: providing refuge and care.</p>
+                <p>As for his mother, she lived until he was six years old, giving him in these formative years a
+                    concentrated dose of affection and tenderness, an indispensable psychological element in
+                    building a sound and balanced personality. Her survival for this period was for a wisdom, just
+                    as her death afterward was for another wisdom. Glory be to Him who planned his affairs with the
+                    most minute detail.</p>
+            </section>
+            <div class="mind-map-summary">
+                <h4>Recap: The Wisdom of His Orphanhood</h4>
+                <ul>
+                    <li><strong>Preservation of Fitrah:</strong> Shielded him from polytheistic influences.</li>
+                    <li><strong>Divine Upbringing:</strong> Ensured his development was solely by Allah's design.
+                    </li>
+                    <li><strong>Human Consolation:</strong> A message of hope for every orphan and afflicted person.
+                    </li>
+                    <li><strong>Nurturing Mercy:</strong> His experience cultivated deep compassion for the weak.
+                    </li>
+                </ul>
+            </div>
 
-                <section id="s6-s2-nursing" class="content-section">
-                    <h3>The Nursing Period: In the Desert of Banu Sa'd</h3>
-                    <p>The Prophet, peace and blessings be upon him, was nursed by his mother, Aminah bint Wahb, for one
-                        week. Then, Thuwaybah, the freed slave of his uncle Abu Lahab, took over his nursing. Through
-                        this, he became a foster brother to his uncle Hamzah ibn Abd al-Muttalib and to Abu Salamah ibn
-                        Abd al-Asad al-Makhzumi.</p>
-                    <p>It was a prevailing custom among the Arab nobles to send their children to the deserts to be
-                        raised there, aiming to achieve essential educational goals related to building a well-rounded
-                        character:</p>
-                    <ul>
-                        <li><strong>Eloquence of the Tongue and Purity of Language:</strong> The desert was the purest
-                            linguistic environment, far from the mixing of tongues and the influence of foreign dialects
-                            in commercial cities like Mecca. A child would grow up with a sound linguistic disposition,
-                            an eloquent tongue, and the ability to express himself in the purest form of his people's
-                            language. This masterful linguistic preparation was necessary for the one upon whom the
-                            Qur'an, the eternal rhetorical miracle, would be revealed, so that he himself would be the
-                            most eloquent speaker of the Arabic language.</li>
-                        <li><strong>Strength of Body and Clarity of Mind:</strong> The harsh desert life, with its pure
-                            air, clear sky, and simple food, strengthened and hardened bodies, raising young men to be
-                            tough, resilient, and capable of enduring hardships. Furthermore, the distance from the
-                            hustle and bustle of urban life provided mental clarity and strengthened the faculties of
-                            observation and contemplation of Allah's kingdom and His cosmic signs.</li>
-                        <li><strong>Authenticity of Morals and Values:</strong> In the desert environment, a child would
-                            absorb authentic Arab customs and noble values such as chivalry, generosity, providing aid,
-                            and fulfilling covenants, far from any external influences that might taint these
-                            characteristics. He learned courage from facing the dangers of the desert, generosity from
-                            its people who share the little they have, and dignity and self-respect.</li>
-                    </ul>
-                    <p>In this context, women from the tribe of Banu Sa'd came to Mecca seeking infants to nurse, and
-                        among them was Halimah al-Sa'diyah.</p>
+            <section id="s6-s2-nursing" class="content-section">
+                <h3>The Nursing Period: In the Desert of Banu Sa'd</h3>
+                <p>The Prophet, peace and blessings be upon him, was nursed by his mother, Aminah bint Wahb, for one
+                    week. Then, Thuwaybah, the freed slave of his uncle Abu Lahab, took over his nursing. Through
+                    this, he became a foster brother to his uncle Hamzah ibn Abd al-Muttalib and to Abu Salamah ibn
+                    Abd al-Asad al-Makhzumi.</p>
+                <p>It was a prevailing custom among the Arab nobles to send their children to the deserts to be
+                    raised there, aiming to achieve essential educational goals related to building a well-rounded
+                    character:</p>
+                <ul>
+                    <li><strong>Eloquence of the Tongue and Purity of Language:</strong> The desert was the purest
+                        linguistic environment, far from the mixing of tongues and the influence of foreign dialects
+                        in commercial cities like Mecca. A child would grow up with a sound linguistic disposition,
+                        an eloquent tongue, and the ability to express himself in the purest form of his people's
+                        language. This masterful linguistic preparation was necessary for the one upon whom the
+                        Qur'an, the eternal rhetorical miracle, would be revealed, so that he himself would be the
+                        most eloquent speaker of the Arabic language.</li>
+                    <li><strong>Strength of Body and Clarity of Mind:</strong> The harsh desert life, with its pure
+                        air, clear sky, and simple food, strengthened and hardened bodies, raising young men to be
+                        tough, resilient, and capable of enduring hardships. Furthermore, the distance from the
+                        hustle and bustle of urban life provided mental clarity and strengthened the faculties of
+                        observation and contemplation of Allah's kingdom and His cosmic signs.</li>
+                    <li><strong>Authenticity of Morals and Values:</strong> In the desert environment, a child would
+                        absorb authentic Arab customs and noble values such as chivalry, generosity, providing aid,
+                        and fulfilling covenants, far from any external influences that might taint these
+                        characteristics. He learned courage from facing the dangers of the desert, generosity from
+                        its people who share the little they have, and dignity and self-respect.</li>
+                </ul>
+                <p>In this context, women from the tribe of Banu Sa'd came to Mecca seeking infants to nurse, and
+                    among them was Halimah al-Sa'diyah.</p>
 
-                    <h4>Halimah al-Sa'diyah and the Accompanying Blessings: An Overflow from the Heavens in a Barren
-                        Land</h4>
-                    <p>It was a year of drought and severe famine that had consumed all that was green and dry, and
-                        destroyed crops and livestock. In these conditions, women from Banu Sa'd ibn Bakr, including
-                        Halimah bint Abi Dhu'ayb al-Sa'diyah, set out for Mecca seeking infants to nurse. It was the
-                        custom of Arab nobles to send their sons to the desert wastelands to be toughened by the harsh
-                        life, granting them strong bodies and eloquence of speech, away from the diseases of the cities.
-                    </p>
-                    <p>Halimah was among the poorest of her people. She recounted her state, saying that she set out on
-                        a pale (white), emaciated she-donkey, which was so slow from weakness that it annoyed her
-                        companions. With her was an old she-camel (shārif) that, by Allah, did not produce a single drop
-                        of milk. She also had her infant son, who would not stop crying all night from severe hunger,
-                        finding nothing in his mother's breast to satisfy him, nor in their she-camel to nourish him.
-                        Despite this overwhelming material darkness, there was a light of hope in her heart. She would
-                        say, "But we were hoping for rain and relief from Allah." This represents a profound lesson in
-                        reliance on Allah (Tawakkul); the lesson is not in the weakness of material means, but in the
-                        strength of one's connection to the Causer of all means.</p>
+                <h4>Halimah al-Sa'diyah and the Accompanying Blessings: An Overflow from the Heavens in a Barren
+                    Land</h4>
+                <p>It was a year of drought and severe famine that had consumed all that was green and dry, and
+                    destroyed crops and livestock. In these conditions, women from Banu Sa'd ibn Bakr, including
+                    Halimah bint Abi Dhu'ayb al-Sa'diyah, set out for Mecca seeking infants to nurse. It was the
+                    custom of Arab nobles to send their sons to the desert wastelands to be toughened by the harsh
+                    life, granting them strong bodies and eloquence of speech, away from the diseases of the cities.
+                </p>
+                <p>Halimah was among the poorest of her people. She recounted her state, saying that she set out on
+                    a pale (white), emaciated she-donkey, which was so slow from weakness that it annoyed her
+                    companions. With her was an old she-camel (shārif) that, by Allah, did not produce a single drop
+                    of milk. She also had her infant son, who would not stop crying all night from severe hunger,
+                    finding nothing in his mother's breast to satisfy him, nor in their she-camel to nourish him.
+                    Despite this overwhelming material darkness, there was a light of hope in her heart. She would
+                    say, "But we were hoping for rain and relief from Allah." This represents a profound lesson in
+                    reliance on Allah (Tawakkul); the lesson is not in the weakness of material means, but in the
+                    strength of one's connection to the Causer of all means.</p>
 
-                    <h5>The Blessed Choice: When Light is Offered and Overlooked</h5>
-                    <p>The caravan arrived in Mecca. Every woman from Banu Sa'd was offered the Messenger of Allah,
-                        peace and blessings be upon him, and each one refused him when told he was an orphan. They would
-                        say, "What can his mother and grandfather possibly do for us?" Their hope was in the generosity
-                        and gift of the infant's father. Thus, every one of Halimah's companions took an infant, and no
-                        infant was left in Mecca except that blessed orphan, Muhammad ibn Abdullah.</p>
-                    <p>When it was time to depart, Halimah hated the thought of returning to her people empty-handed
-                        while all her friends had returned with a nursing infant. She said to her husband, al-Harith ibn
-                        Abd al-Uzza (also known as Abu Kabshah), "By Allah, I hate to go back among my friends without
-                        taking an infant. By Allah, I will go to that orphan and I will take him." Her husband, with a
-                        sound heart hoping for goodness, encouraged her, saying words that were the key to relief and
-                        blessings: "There is no harm in you doing so. Perhaps Allah will place a blessing for us in
-                        him." This statement came from a heart that saw with its insight what eyes could not see, and
-                        hoped for good where others had despaired.</p>
+                <h5>The Blessed Choice: When Light is Offered and Overlooked</h5>
+                <p>The caravan arrived in Mecca. Every woman from Banu Sa'd was offered the Messenger of Allah,
+                    peace and blessings be upon him, and each one refused him when told he was an orphan. They would
+                    say, "What can his mother and grandfather possibly do for us?" Their hope was in the generosity
+                    and gift of the infant's father. Thus, every one of Halimah's companions took an infant, and no
+                    infant was left in Mecca except that blessed orphan, Muhammad ibn Abdullah.</p>
+                <p>When it was time to depart, Halimah hated the thought of returning to her people empty-handed
+                    while all her friends had returned with a nursing infant. She said to her husband, al-Harith ibn
+                    Abd al-Uzza (also known as Abu Kabshah), "By Allah, I hate to go back among my friends without
+                    taking an infant. By Allah, I will go to that orphan and I will take him." Her husband, with a
+                    sound heart hoping for goodness, encouraged her, saying words that were the key to relief and
+                    blessings: "There is no harm in you doing so. Perhaps Allah will place a blessing for us in
+                    him." This statement came from a heart that saw with its insight what eyes could not see, and
+                    hoped for good where others had despaired.</p>
 
-                    <h5>Manifestations of Blessing: An Immediate, Tangible Outpouring</h5>
-                    <p>The moment Halimah took him, returned to her camp, and placed him in her lap, the divine
-                        blessings manifested in an immediate and tangible way, as if the heavens were waiting for this
-                        blessed choice to pour out their treasures:</p>
-                    <ul>
-                        <li><strong>An Instant Gush of Milk:</strong> As soon as she placed him in her lap, her breasts
-                            filled with as much milk as Allah willed. The Prophet, peace and blessings be upon him,
-                            drank until he was satisfied. Then his foster brother (Halimah's son) drank until he was
-                            completely full, and they both slept peacefully. This was the first night her son had slept
-                            without crying in a long time. Halimah said, "My husband went to our old she-camel, and
-                            behold, her udder was full. He milked from it what he drank and I drank with him until we
-                            were both satisfied. We spent the best night."</li>
-                        <li><strong>The Strength of the She-Donkey on the Return Journey:</strong> On the way back, the
-                            state of the emaciated she-donkey that had been a burden on the caravan was transformed. It
-                            began to outpace all the strong animals, so much so that her companions were astonished and
-                            said to her, "O daughter of Abu Dhu'ayb, woe to you! Slow down for us! Is this not the same
-                            she-donkey you came on?" She would reply with pride and confidence, "Yes, by Allah, it is
-                            indeed her." They said, "By Allah, there is something great about her." They realized that
-                            something extraordinary had happened.</li>
-                        <li><strong>Blessing in the Lands and Flocks of Banu Sa'd:</strong> Halimah arrived in the lands
-                            of her people, which in that year was one of the most barren of Allah's lands. But after the
-                            arrival of the Prophet, peace and blessings be upon him, everything changed. Halimah's flock
-                            would go to the pasture in the morning with the people's flocks, hungry and frail, but in
-                            the evening, they would return with full bellies and udders overflowing with milk. Her
-                            family would milk them and drink, while the flocks of the rest of the tribe returned in the
-                            same hungry state, not producing a drop of milk. This continued until it caught everyone's
-                            attention. They began instructing their shepherds, "Woe to you! Graze where the shepherd of
-                            the daughter of Abu Dhu'ayb grazes." They would follow her flock to the same pasture, but
-                            their flocks would return hungry as they had left, while hers returned full of milk. They
-                            realized that the blessing was not in the place, but in the one who had come to that place.
-                            His blessing, peace and blessings be upon him, extended beyond him to everything around him.
-                        </li>
-                    </ul>
+                <h5>Manifestations of Blessing: An Immediate, Tangible Outpouring</h5>
+                <p>The moment Halimah took him, returned to her camp, and placed him in her lap, the divine
+                    blessings manifested in an immediate and tangible way, as if the heavens were waiting for this
+                    blessed choice to pour out their treasures:</p>
+                <ul>
+                    <li><strong>An Instant Gush of Milk:</strong> As soon as she placed him in her lap, her breasts
+                        filled with as much milk as Allah willed. The Prophet, peace and blessings be upon him,
+                        drank until he was satisfied. Then his foster brother (Halimah's son) drank until he was
+                        completely full, and they both slept peacefully. This was the first night her son had slept
+                        without crying in a long time. Halimah said, "My husband went to our old she-camel, and
+                        behold, her udder was full. He milked from it what he drank and I drank with him until we
+                        were both satisfied. We spent the best night."</li>
+                    <li><strong>The Strength of the She-Donkey on the Return Journey:</strong> On the way back, the
+                        state of the emaciated she-donkey that had been a burden on the caravan was transformed. It
+                        began to outpace all the strong animals, so much so that her companions were astonished and
+                        said to her, "O daughter of Abu Dhu'ayb, woe to you! Slow down for us! Is this not the same
+                        she-donkey you came on?" She would reply with pride and confidence, "Yes, by Allah, it is
+                        indeed her." They said, "By Allah, there is something great about her." They realized that
+                        something extraordinary had happened.</li>
+                    <li><strong>Blessing in the Lands and Flocks of Banu Sa'd:</strong> Halimah arrived in the lands
+                        of her people, which in that year was one of the most barren of Allah's lands. But after the
+                        arrival of the Prophet, peace and blessings be upon him, everything changed. Halimah's flock
+                        would go to the pasture in the morning with the people's flocks, hungry and frail, but in
+                        the evening, they would return with full bellies and udders overflowing with milk. Her
+                        family would milk them and drink, while the flocks of the rest of the tribe returned in the
+                        same hungry state, not producing a drop of milk. This continued until it caught everyone's
+                        attention. They began instructing their shepherds, "Woe to you! Graze where the shepherd of
+                        the daughter of Abu Dhu'ayb grazes." They would follow her flock to the same pasture, but
+                        their flocks would return hungry as they had left, while hers returned full of milk. They
+                        realized that the blessing was not in the place, but in the one who had come to that place.
+                        His blessing, peace and blessings be upon him, extended beyond him to everything around him.
+                    </li>
+                </ul>
 
-                    <h4>Growth Unlike Other Boys</h4>
-                    <p>The Prophet, peace and blessings be upon him, remained with Banu Sa'd, growing in a way unlike
-                        other boys. He would grow in a day what others grew in a month, and in a month what others grew
-                        in a year. By the time he was two, he was a strong, well-built boy (jafr), eloquent in speech
-                        and clear in logic. When he completed two years, Halimah brought him to his mother, though she
-                        was the most eager of people for him to stay with her, because of the unending blessing she saw.
-                        She pleaded with his mother, Aminah, saying, "Let my son stay with me until he grows stronger,
-                        for I fear the epidemic of Mecca for him." She persisted until Aminah agreed, and Halimah
-                        returned with him, the happiest of people. His stay with them was extended, and the blessings
-                        continued, until the famous incident of the opening of the chest occurred when he was four or
-                        five years old. At that point, Halimah became fearful for him and returned him to his mother.
-                    </p>
-                    <p>The story of his stay with Banu Sa'd was tangible, material proof that this child was not like
-                        any other child, and that his presence in any place was a cause for Allah's mercy and blessings
-                        to descend upon the people of that place. He is the same one who would later say as a Prophet,
-                        "I am the most eloquent of the Arabs, for I am from Quraysh, and I was nursed among the Banu
-                        Sa'd ibn Bakr," taking pride in that upbringing that polished his tongue and his body, and which
-                        was the first station in his preparation to carry the great message.</p>
-                </section>
+                <h4>Growth Unlike Other Boys</h4>
+                <p>The Prophet, peace and blessings be upon him, remained with Banu Sa'd, growing in a way unlike
+                    other boys. He would grow in a day what others grew in a month, and in a month what others grew
+                    in a year. By the time he was two, he was a strong, well-built boy (jafr), eloquent in speech
+                    and clear in logic. When he completed two years, Halimah brought him to his mother, though she
+                    was the most eager of people for him to stay with her, because of the unending blessing she saw.
+                    She pleaded with his mother, Aminah, saying, "Let my son stay with me until he grows stronger,
+                    for I fear the epidemic of Mecca for him." She persisted until Aminah agreed, and Halimah
+                    returned with him, the happiest of people. His stay with them was extended, and the blessings
+                    continued, until the famous incident of the opening of the chest occurred when he was four or
+                    five years old. At that point, Halimah became fearful for him and returned him to his mother.
+                </p>
+                <p>The story of his stay with Banu Sa'd was tangible, material proof that this child was not like
+                    any other child, and that his presence in any place was a cause for Allah's mercy and blessings
+                    to descend upon the people of that place. He is the same one who would later say as a Prophet,
+                    "I am the most eloquent of the Arabs, for I am from Quraysh, and I was nursed among the Banu
+                    Sa'd ibn Bakr," taking pride in that upbringing that polished his tongue and his body, and which
+                    was the first station in his preparation to carry the great message.</p>
+            </section>
 
-                <section id="s6-s3-chest-opening" class="content-section">
-                    <h3>The Incident of the Opening of the Chest: A Heavenly Purification and Divine Preparation</h3>
-                    <p>The upbringing of the Prophet, peace and blessings be upon him, in the desert of Banu Sa'd was
-                        not merely a period for gaining strength and eloquence; it was the stage for extraordinary
-                        events that prepared him for the greatest mission humanity has ever known. The most prominent of
-                        these events is the incident of the opening of the chest (Shaqq al-Sadr), which is considered
-                        the first practical and physical sign of his prophethood, and an operation of purification and
-                        preparation for his noble heart.</p>
-                    <p>The most authentic and established narration, found in Sahih Muslim from Anas ibn Malik, may
-                        Allah be pleased with him, states that the Prophet, peace and blessings be upon him, was four or
-                        five years old. While he was playing with other boys behind the houses of Banu Sa'd, herding
-                        young sheep (bahm), the angel Jibril (Gabriel), peace be upon him, and another angel came to him
-                        in the form of two men wearing intensely white garments. The narrations mention that the other
-                        boys saw these two men approach Muhammad directly. They took him gently and laid him on the
-                        ground.</p>
-                    <p>Terror struck the hearts of the children. They fled in panic to Halimah al-Sa'diyah, screaming at
-                        the top of their lungs, "Muhammad has been killed! Muhammad has been killed!" Halimah and her
-                        husband, al-Harith, rushed out in terror towards the place the boys pointed to, only to find him
-                        sitting alone, calm, but with the color of his face changed (muntaqa' al-lawn) from the ordeal.
-                    </p>
-                    <p>As for what happened in their absence, Anas ibn Malik narrated from the Messenger of Allah, peace
-                        and blessings be upon him, that Jibril came to him, opened his chest, took out his heart, and
-                        then split it open. He removed from it a black clot (a piece of congealed blood) and said, "This
-                        is the portion of Satan from you." This was not a cleansing from sin, as prophets are
-                        infallible. Rather, it was a preemptive purification from the very origin of inclination and
-                        desire through which Satan enters the hearts of humans, so that his human nature would be in the
-                        highest degree of purity and perfection.</p>
-                    <p>Then, Jibril washed his heart in a golden basin with Zamzam water—a blessed water in a blessed
-                        vessel—then sealed it (joined its parts) and returned it to its place. A physical mark of this
-                        incident remained as a testament to its reality. Anas ibn Malik, who served the Prophet for ten
-                        years, said, "I used to see the mark of that stitching on his chest."</p>
-                    <p>This incident was not merely a miracle; it was a necessity to prepare his noble heart to be a
-                        pure vessel for the great divine revelation, so that Satan would have no way or entry point to
-                        him. It is said that the Seal of Prophethood—a gland the size of a pigeon's egg between his
-                        shoulder blades—appeared prominently after this incident as a physical sign of his prophethood,
-                        a sign that the People of the Book knew of from their scriptures and were awaiting in the Final
-                        Prophet.</p>
-                    <p>After this extraordinary event, fear gripped the hearts of Halimah and her husband. It was not a
-                        fear of him being killed, but a fear that some harm from the jinn or spirits had befallen him.
-                        She said to her husband, "I fear that this boy has been afflicted, so let us return him to his
-                        family before it becomes apparent." She returned him to his mother, Aminah, in Mecca. When she
-                        told Aminah what had happened, Aminah showed no fear or panic. Instead, she received the news
-                        with remarkable steadfastness and certainty, saying reassuringly, "No, by Allah, Satan has no
-                        way to him. By Allah, this son of mine is destined for greatness." She then reminded Halimah of
-                        the vision she had seen when she was pregnant with him and when she gave birth, in which a light
-                        emerged from her that illuminated the palaces of Busra in the land of Syria. Thus, his mother
-                        was the first to believe in his great destiny and to be certain of his unique future.</p>
-                </section>
+            <section id="s6-s3-chest-opening" class="content-section">
+                <h3>The Incident of the Opening of the Chest: A Heavenly Purification and Divine Preparation</h3>
+                <p>The upbringing of the Prophet, peace and blessings be upon him, in the desert of Banu Sa'd was
+                    not merely a period for gaining strength and eloquence; it was the stage for extraordinary
+                    events that prepared him for the greatest mission humanity has ever known. The most prominent of
+                    these events is the incident of the opening of the chest (Shaqq al-Sadr), which is considered
+                    the first practical and physical sign of his prophethood, and an operation of purification and
+                    preparation for his noble heart.</p>
+                <p>The most authentic and established narration, found in Sahih Muslim from Anas ibn Malik, may
+                    Allah be pleased with him, states that the Prophet, peace and blessings be upon him, was four or
+                    five years old. While he was playing with other boys behind the houses of Banu Sa'd, herding
+                    young sheep (bahm), the angel Jibril (Gabriel), peace be upon him, and another angel came to him
+                    in the form of two men wearing intensely white garments. The narrations mention that the other
+                    boys saw these two men approach Muhammad directly. They took him gently and laid him on the
+                    ground.</p>
+                <p>Terror struck the hearts of the children. They fled in panic to Halimah al-Sa'diyah, screaming at
+                    the top of their lungs, "Muhammad has been killed! Muhammad has been killed!" Halimah and her
+                    husband, al-Harith, rushed out in terror towards the place the boys pointed to, only to find him
+                    sitting alone, calm, but with the color of his face changed (muntaqa' al-lawn) from the ordeal.
+                </p>
+                <p>As for what happened in their absence, Anas ibn Malik narrated from the Messenger of Allah, peace
+                    and blessings be upon him, that Jibril came to him, opened his chest, took out his heart, and
+                    then split it open. He removed from it a black clot (a piece of congealed blood) and said, "This
+                    is the portion of Satan from you." This was not a cleansing from sin, as prophets are
+                    infallible. Rather, it was a preemptive purification from the very origin of inclination and
+                    desire through which Satan enters the hearts of humans, so that his human nature would be in the
+                    highest degree of purity and perfection.</p>
+                <p>Then, Jibril washed his heart in a golden basin with Zamzam water—a blessed water in a blessed
+                    vessel—then sealed it (joined its parts) and returned it to its place. A physical mark of this
+                    incident remained as a testament to its reality. Anas ibn Malik, who served the Prophet for ten
+                    years, said, "I used to see the mark of that stitching on his chest."</p>
+                <p>This incident was not merely a miracle; it was a necessity to prepare his noble heart to be a
+                    pure vessel for the great divine revelation, so that Satan would have no way or entry point to
+                    him. It is said that the Seal of Prophethood—a gland the size of a pigeon's egg between his
+                    shoulder blades—appeared prominently after this incident as a physical sign of his prophethood,
+                    a sign that the People of the Book knew of from their scriptures and were awaiting in the Final
+                    Prophet.</p>
+                <p>After this extraordinary event, fear gripped the hearts of Halimah and her husband. It was not a
+                    fear of him being killed, but a fear that some harm from the jinn or spirits had befallen him.
+                    She said to her husband, "I fear that this boy has been afflicted, so let us return him to his
+                    family before it becomes apparent." She returned him to his mother, Aminah, in Mecca. When she
+                    told Aminah what had happened, Aminah showed no fear or panic. Instead, she received the news
+                    with remarkable steadfastness and certainty, saying reassuringly, "No, by Allah, Satan has no
+                    way to him. By Allah, this son of mine is destined for greatness." She then reminded Halimah of
+                    the vision she had seen when she was pregnant with him and when she gave birth, in which a light
+                    emerged from her that illuminated the palaces of Busra in the land of Syria. Thus, his mother
+                    was the first to believe in his great destiny and to be certain of his unique future.</p>
+            </section>
 
-                <section id="s6-s4-guardianship" class="content-section">
-                    <h3>Succession of Events: From One Guardianship to Another, From One Orphanhood to Another</h3>
+            <section id="s6-s4-guardianship" class="content-section">
+                <h3>Succession of Events: From One Guardianship to Another, From One Orphanhood to Another</h3>
 
-                    <h4>Death of the Loving Mother (Age 6):</h4>
-                    <p>Two years after his return to his mother, Aminah wanted to visit her paternal uncles (the
-                        Prophet's grand-uncles) from the tribe of Banu al-Najjar in Yathrib (later Madinah), and to
-                        visit the grave of her husband, Abdullah, there. She took her six-year-old son and her servant,
-                        Barakah (Umm Ayman), with her. In Yathrib, he spent a month, saw the house where his father had
-                        died, and played with the boys of his grand-uncles. On the way back to Mecca, at a place called
-                        "al-Abwa'," his mother Aminah fell gravely ill and passed away.</p>
-                    <p>There, in the desolation of the desert, the Prophet, peace and blessings be upon him, tasted the
-                        bitterness of orphanhood once more, having lost the father he never saw, and now the mother who
-                        was his entire world. He became an orphan of both parents. With this, the wisdom of the trial
-                        was completed, and his sense of detachment from all earthly support and reliance on heavenly
-                        support alone deepened. It is authentically reported in Sahih Muslim that he later visited her
-                        grave during the year of the Conquest of Mecca or the `Umrah of al-Qada', where he wept and made
-                        those around him weep. He said, "I asked my Lord for permission to seek forgiveness for her, but
-                        it was not granted to me. I asked His permission to visit her grave, and it was granted to me.
-                        So visit the graves, for they are a reminder of death." It is a scene that combines the majesty
-                        of prophethood with the tenderness of human mercy.</p>
+                <h4>Death of the Loving Mother (Age 6):</h4>
+                <p>Two years after his return to his mother, Aminah wanted to visit her paternal uncles (the
+                    Prophet's grand-uncles) from the tribe of Banu al-Najjar in Yathrib (later Madinah), and to
+                    visit the grave of her husband, Abdullah, there. She took her six-year-old son and her servant,
+                    Barakah (Umm Ayman), with her. In Yathrib, he spent a month, saw the house where his father had
+                    died, and played with the boys of his grand-uncles. On the way back to Mecca, at a place called
+                    "al-Abwa'," his mother Aminah fell gravely ill and passed away.</p>
+                <p>There, in the desolation of the desert, the Prophet, peace and blessings be upon him, tasted the
+                    bitterness of orphanhood once more, having lost the father he never saw, and now the mother who
+                    was his entire world. He became an orphan of both parents. With this, the wisdom of the trial
+                    was completed, and his sense of detachment from all earthly support and reliance on heavenly
+                    support alone deepened. It is authentically reported in Sahih Muslim that he later visited her
+                    grave during the year of the Conquest of Mecca or the `Umrah of al-Qada', where he wept and made
+                    those around him weep. He said, "I asked my Lord for permission to seek forgiveness for her, but
+                    it was not granted to me. I asked His permission to visit her grave, and it was granted to me.
+                    So visit the graves, for they are a reminder of death." It is a scene that combines the majesty
+                    of prophethood with the tenderness of human mercy.</p>
 
-                    <h4>Under the Care of the Affectionate Grandfather: `Abd al-Muttalib (Ages 6–8):</h4>
-                    <p>After the six-year-old child buried the pure body of his mother in the soil of al-Abwa' and
-                        returned to Mecca with his caregiver, Umm Ayman, his small heart carried a deep wound and great
-                        pain; he was now an orphan of both parents. But the care of Allah that had surrounded him since
-                        his birth did not cease. It manifested in a new form, as he moved into the custody of his
-                        grandfather, `Abd al-Muttalib ibn Hashim, the leader of Quraysh and the revered elder of Mecca.
-                    </p>
-                    <p>This guardianship was not merely a social duty; it was an outpouring of exceptional love and
-                        unparalleled tenderness. It was as if Allah intended to compensate this orphan with a love that
-                        filled the void of both father and mother, and to grant him, in the care of his grandfather, an
-                        honor and status that would protect him from the humiliation and hardship of being an orphan.
-                    </p>
-                    <p>Abd al-Muttalib loved all his sons, but his love for Muhammad, peace and blessings be upon him,
-                        was something entirely different. The reliable books of Seerah, like Ibn Hisham's *Seerah* and
-                        Ibn Sa'd's *Al-Tabaqat Al-Kubra*, report that Abd al-Muttalib felt a tenderness for him that he
-                        had never felt for any of his own children. He would not eat a meal without saying, "Bring me my
-                        son," and he would be brought to eat with him. He would seat him by his side, pat his back, and
-                        delight in everything he did.</p>
-                    <p>The most famous story illustrating this special status is that of the "cushion of leadership."
-                        Abd al-Muttalib had a special cushion placed for him in the shade of the Kaaba, where he would
-                        sit alone to manage the affairs of Quraysh. Out of respect for Abd al-Muttalib's great prestige,
-                        none of his sons would sit on that cushion; they sat around it in deference. However, the child
-                        Muhammad would come with innate confidence and composure and sit directly on that cushion. Each
-                        time, his uncles would rush to move him, but the affectionate grandfather would intervene,
-                        saying with a voice full of tenderness and certainty: "Leave my son be. By Allah, he is destined
-                        for a great matter." He would then seat him beside him on the cushion and caress his back. This
-                        recurring scene was a public declaration before the chiefs of Quraysh that this orphan was
-                        unlike any other.</p>
-                    <p>When the Prophet, peace and blessings be upon him, reached the age of eight, his grandfather Abd
-                        al-Muttalib passed away. The child mourned him deeply and was seen walking behind his
-                        grandfather's funeral procession, weeping. But even in his final moments, Abd al-Muttalib
-                        planned for his grandson's future, entrusting him to his son, Abu Talib, the full brother of the
-                        Prophet's father, thus beginning a new phase of divine care.</p>
+                <h4>Under the Care of the Affectionate Grandfather: `Abd al-Muttalib (Ages 6–8):</h4>
+                <p>After the six-year-old child buried the pure body of his mother in the soil of al-Abwa' and
+                    returned to Mecca with his caregiver, Umm Ayman, his small heart carried a deep wound and great
+                    pain; he was now an orphan of both parents. But the care of Allah that had surrounded him since
+                    his birth did not cease. It manifested in a new form, as he moved into the custody of his
+                    grandfather, `Abd al-Muttalib ibn Hashim, the leader of Quraysh and the revered elder of Mecca.
+                </p>
+                <p>This guardianship was not merely a social duty; it was an outpouring of exceptional love and
+                    unparalleled tenderness. It was as if Allah intended to compensate this orphan with a love that
+                    filled the void of both father and mother, and to grant him, in the care of his grandfather, an
+                    honor and status that would protect him from the humiliation and hardship of being an orphan.
+                </p>
+                <p>Abd al-Muttalib loved all his sons, but his love for Muhammad, peace and blessings be upon him,
+                    was something entirely different. The reliable books of Seerah, like Ibn Hisham's *Seerah* and
+                    Ibn Sa'd's *Al-Tabaqat Al-Kubra*, report that Abd al-Muttalib felt a tenderness for him that he
+                    had never felt for any of his own children. He would not eat a meal without saying, "Bring me my
+                    son," and he would be brought to eat with him. He would seat him by his side, pat his back, and
+                    delight in everything he did.</p>
+                <p>The most famous story illustrating this special status is that of the "cushion of leadership."
+                    Abd al-Muttalib had a special cushion placed for him in the shade of the Kaaba, where he would
+                    sit alone to manage the affairs of Quraysh. Out of respect for Abd al-Muttalib's great prestige,
+                    none of his sons would sit on that cushion; they sat around it in deference. However, the child
+                    Muhammad would come with innate confidence and composure and sit directly on that cushion. Each
+                    time, his uncles would rush to move him, but the affectionate grandfather would intervene,
+                    saying with a voice full of tenderness and certainty: "Leave my son be. By Allah, he is destined
+                    for a great matter." He would then seat him beside him on the cushion and caress his back. This
+                    recurring scene was a public declaration before the chiefs of Quraysh that this orphan was
+                    unlike any other.</p>
+                <p>When the Prophet, peace and blessings be upon him, reached the age of eight, his grandfather Abd
+                    al-Muttalib passed away. The child mourned him deeply and was seen walking behind his
+                    grandfather's funeral procession, weeping. But even in his final moments, Abd al-Muttalib
+                    planned for his grandson's future, entrusting him to his son, Abu Talib, the full brother of the
+                    Prophet's father, thus beginning a new phase of divine care.</p>
 
-                    <h4>To the House of the Protective Uncle: Abu Talib (Age 8 onwards):</h4>
-                    <p>With the passing of `Abd al-Muttalib, the eight-year-old boy moved from the house of the wealthy
-                        and prestigious leader of Mecca to the house of his uncle, Abu Talib—a noble and honorable man,
-                        but one of limited means and many children. This transition was, in itself, a new school in his
-                        divine preparation, teaching him to combine nobility of lineage with humility in living.</p>
-                    <p>Despite his financial constraints, Abu Talib opened his heart and home to his nephew. His care
-                        was not mere shelter; it was an outpouring of sincere fatherly love that surpassed even the love
-                        for his own sons. It is narrated that Abu Talib would not sleep unless Muhammad was by his side
-                        and would not go out without taking him along.</p>
-                    <p>As it had in the home of Halimah, blessing descended upon the house of Abu Talib, a tangible
-                        blessing witnessed by the entire household. His many children would often not have enough food
-                        to be satisfied. But Abu Talib noticed that when Muhammad, peace and blessings be upon him, ate
-                        with them, a small amount of food would be sufficient for all of them, with some left over. So,
-                        whenever a meal was served, he would say, "Stay where you are until my son arrives." The Prophet
-                        would come, begin his meal by mentioning Allah's name, and they would all eat until they were
-                        full, with food still remaining.</p>
-                    <p>This blessed guardianship continued for over forty years, encompassing his youth, marriage, and,
-                        most importantly, the first ten years of his prophetic mission. After the Prophet, peace and
-                        blessings be upon him, proclaimed his call, Abu Talib transformed from a loving uncle into an
-                        impenetrable fortress and a shield protecting his nephew from the tyranny of Quraysh. Although
-                        he remained on the religion of his people and did not embrace Islam, he fulfilled the duty of
-                        protection and support like no one else. When the delegations of Quraysh came demanding he hand
-                        over his nephew to be killed, he famously responded with lines of poetry:<br>
-                        By Allah, they will never reach you with all their numbers,<br>
-                        Until I am buried, laid to rest in the dust.<br>
-                        So proclaim your message; there is no blame upon you.<br>
-                        Be joyful, and let your eyes find comfort in that.<br>
-                        Abu Talib's protection, based on the honor of his covenant and kinship, was a physical means
-                        that Allah established to preserve His call in its infancy. For this cause, he endured the
-                        unjust three-year siege in the "Valley of Abu Talib," boycotted his people, and suffered from
-                        hunger, all in defense of his nephew and his message.</p>
-                </section>
-                <div class="mind-map-summary">
-                    <h4>Recap: Divine Preparation in Childhood</h4>
-                    <ul>
-                        <li><strong>Desert Upbringing:</strong> Gained eloquence, physical strength, and authentic
-                            morals with Halimah al-Sa'diyah, accompanied by immense blessings.</li>
-                        <li><strong>Opening of the Chest:</strong> A direct physical and spiritual purification of his
-                            heart by angels, preparing him for prophethood.</li>
-                        <li><strong>Successive Guardianships:</strong> After his mother's death, he received immense
-                            love from his grandfather `Abd al-Muttalib and then unwavering protection from his uncle Abu
-                            Talib, demonstrating Allah's continuous care.</li>
-                    </ul>
-                </div>
+                <h4>To the House of the Protective Uncle: Abu Talib (Age 8 onwards):</h4>
+                <p>With the passing of `Abd al-Muttalib, the eight-year-old boy moved from the house of the wealthy
+                    and prestigious leader of Mecca to the house of his uncle, Abu Talib—a noble and honorable man,
+                    but one of limited means and many children. This transition was, in itself, a new school in his
+                    divine preparation, teaching him to combine nobility of lineage with humility in living.</p>
+                <p>Despite his financial constraints, Abu Talib opened his heart and home to his nephew. His care
+                    was not mere shelter; it was an outpouring of sincere fatherly love that surpassed even the love
+                    for his own sons. It is narrated that Abu Talib would not sleep unless Muhammad was by his side
+                    and would not go out without taking him along.</p>
+                <p>As it had in the home of Halimah, blessing descended upon the house of Abu Talib, a tangible
+                    blessing witnessed by the entire household. His many children would often not have enough food
+                    to be satisfied. But Abu Talib noticed that when Muhammad, peace and blessings be upon him, ate
+                    with them, a small amount of food would be sufficient for all of them, with some left over. So,
+                    whenever a meal was served, he would say, "Stay where you are until my son arrives." The Prophet
+                    would come, begin his meal by mentioning Allah's name, and they would all eat until they were
+                    full, with food still remaining.</p>
+                <p>This blessed guardianship continued for over forty years, encompassing his youth, marriage, and,
+                    most importantly, the first ten years of his prophetic mission. After the Prophet, peace and
+                    blessings be upon him, proclaimed his call, Abu Talib transformed from a loving uncle into an
+                    impenetrable fortress and a shield protecting his nephew from the tyranny of Quraysh. Although
+                    he remained on the religion of his people and did not embrace Islam, he fulfilled the duty of
+                    protection and support like no one else. When the delegations of Quraysh came demanding he hand
+                    over his nephew to be killed, he famously responded with lines of poetry:<br>
+                    By Allah, they will never reach you with all their numbers,<br>
+                    Until I am buried, laid to rest in the dust.<br>
+                    So proclaim your message; there is no blame upon you.<br>
+                    Be joyful, and let your eyes find comfort in that.<br>
+                    Abu Talib's protection, based on the honor of his covenant and kinship, was a physical means
+                    that Allah established to preserve His call in its infancy. For this cause, he endured the
+                    unjust three-year siege in the "Valley of Abu Talib," boycotted his people, and suffered from
+                    hunger, all in defense of his nephew and his message.</p>
+            </section>
+            <div class="mind-map-summary">
+                <h4>Recap: Divine Preparation in Childhood</h4>
+                <ul>
+                    <li><strong>Desert Upbringing:</strong> Gained eloquence, physical strength, and authentic
+                        morals with Halimah al-Sa'diyah, accompanied by immense blessings.</li>
+                    <li><strong>Opening of the Chest:</strong> A direct physical and spiritual purification of his
+                        heart by angels, preparing him for prophethood.</li>
+                    <li><strong>Successive Guardianships:</strong> After his mother's death, he received immense
+                        love from his grandfather `Abd al-Muttalib and then unwavering protection from his uncle Abu
+                        Talib, demonstrating Allah's continuous care.</li>
+                </ul>
+            </div>
 
-                <section id="s6-s5-youth" class="content-section">
-                    <h3>The Onset of Youth: Earning a Livelihood and Education in the School of the Desert</h3>
-                    <p>As the Prophet, peace and blessings be upon him, entered his youth, his remarkable character
-                        began to shine, and signs of early maturity and a sense of responsibility became apparent.</p>
+            <section id="s6-s5-youth" class="content-section">
+                <h3>The Onset of Youth: Earning a Livelihood and Education in the School of the Desert</h3>
+                <p>As the Prophet, peace and blessings be upon him, entered his youth, his remarkable character
+                    began to shine, and signs of early maturity and a sense of responsibility became apparent.</p>
 
-                    <h4>The First Journey to Syria and the Story of Bahira the Monk (Age 12):</h4>
-                    <p>When the Prophet, peace and blessings be upon him, was twelve years old, his uncle Abu Talib
-                        decided to set out on a trading journey to Greater Syria (al-Sham) with a Quraysh caravan. The
-                        young Muhammad was deeply attached to his uncle, and when he saw him preparing to leave, he
-                        clung to the reins of his uncle's camel, expressing a strong desire to accompany him. Moved with
-                        compassion, Abu Talib said, "By Allah, I will take him with me; he shall not part from me, nor I
-                        from him."</p>
-                    <p>The caravan set off and, on its way, stopped in the region of Busra in Syria. There, in a
-                        monastery, lived a Christian monk named Bahira, who was learned in the Gospels and had vast
-                        knowledge of the scriptures. Bahira had seen Quraysh caravans pass by every year without paying
-                        them any mind. But this year, he saw something astonishing. From his monastery, he noticed a
-                        cloud shading a specific young boy among all the men in the caravan, moving when he moved and
-                        stopping when he stopped. When the caravan dismounted to rest under a nearby tree, the branches
-                        of the tree bent down to provide more shade for that same boy.</p>
-                    <p>Bahira realized these were signs of something great. He prepared a meal for them and invited the
-                        entire caravan, saying, "O people of Quraysh, I have prepared food for you, and I would like all
-                        of you to attend—your young and old, your slaves and your free." The men accepted, but they left
-                        Muhammad, peace and blessings be upon him, with their belongings due to his young age.</p>
-                    <p>When they gathered, Bahira looked at their faces but did not find the signs he knew. He insisted,
-                        "Let no one remain behind!" They replied, "No one is left except a boy, the youngest among us."
-                        Bahira insisted, "Do not do so! Call him to join you." A man from Quraysh then went and brought
-                        him to sit with them.</p>
-                    <p>Bahira observed him intently. After the meal, he approached the blessed boy and began asking him
-                        about his life, his sleep, and his affairs. The Prophet's answers corresponded exactly with what
-                        the monk had in his scriptures about the awaited prophet. Then, Bahira looked at his back and
-                        saw the "Seal of Prophethood" between his shoulder blades, exactly where he knew it should be,
-                        which confirmed his certainty.</p>
-                    <p>The monk then turned to Abu Talib and asked, "What is this boy to you?" Abu Talib replied, "He is
-                        my son." Bahira said, "He cannot be your son, for this boy's father should not be alive." Abu
-                        Talib then clarified, "He is my nephew." Bahira asked, "What happened to his father?" He
-                        replied, "He died while his mother was pregnant with him." The monk affirmed, "You have spoken
-                        the truth." He then issued a timeless warning: "Take your nephew back to his land and guard him
-                        from the Jews. For by Allah, if they were to see him and know what I know, they would surely
-                        seek to harm him. A great destiny awaits this nephew of yours." Abu Talib quickly returned with
-                        him to Mecca. (This story was narrated by al-Tirmidhi, but some later hadith scholars consider
-                        its chain of transmission to be weak, though it is widely cited in books of Seerah).</p>
+                <h4>The First Journey to Syria and the Story of Bahira the Monk (Age 12):</h4>
+                <p>When the Prophet, peace and blessings be upon him, was twelve years old, his uncle Abu Talib
+                    decided to set out on a trading journey to Greater Syria (al-Sham) with a Quraysh caravan. The
+                    young Muhammad was deeply attached to his uncle, and when he saw him preparing to leave, he
+                    clung to the reins of his uncle's camel, expressing a strong desire to accompany him. Moved with
+                    compassion, Abu Talib said, "By Allah, I will take him with me; he shall not part from me, nor I
+                    from him."</p>
+                <p>The caravan set off and, on its way, stopped in the region of Busra in Syria. There, in a
+                    monastery, lived a Christian monk named Bahira, who was learned in the Gospels and had vast
+                    knowledge of the scriptures. Bahira had seen Quraysh caravans pass by every year without paying
+                    them any mind. But this year, he saw something astonishing. From his monastery, he noticed a
+                    cloud shading a specific young boy among all the men in the caravan, moving when he moved and
+                    stopping when he stopped. When the caravan dismounted to rest under a nearby tree, the branches
+                    of the tree bent down to provide more shade for that same boy.</p>
+                <p>Bahira realized these were signs of something great. He prepared a meal for them and invited the
+                    entire caravan, saying, "O people of Quraysh, I have prepared food for you, and I would like all
+                    of you to attend—your young and old, your slaves and your free." The men accepted, but they left
+                    Muhammad, peace and blessings be upon him, with their belongings due to his young age.</p>
+                <p>When they gathered, Bahira looked at their faces but did not find the signs he knew. He insisted,
+                    "Let no one remain behind!" They replied, "No one is left except a boy, the youngest among us."
+                    Bahira insisted, "Do not do so! Call him to join you." A man from Quraysh then went and brought
+                    him to sit with them.</p>
+                <p>Bahira observed him intently. After the meal, he approached the blessed boy and began asking him
+                    about his life, his sleep, and his affairs. The Prophet's answers corresponded exactly with what
+                    the monk had in his scriptures about the awaited prophet. Then, Bahira looked at his back and
+                    saw the "Seal of Prophethood" between his shoulder blades, exactly where he knew it should be,
+                    which confirmed his certainty.</p>
+                <p>The monk then turned to Abu Talib and asked, "What is this boy to you?" Abu Talib replied, "He is
+                    my son." Bahira said, "He cannot be your son, for this boy's father should not be alive." Abu
+                    Talib then clarified, "He is my nephew." Bahira asked, "What happened to his father?" He
+                    replied, "He died while his mother was pregnant with him." The monk affirmed, "You have spoken
+                    the truth." He then issued a timeless warning: "Take your nephew back to his land and guard him
+                    from the Jews. For by Allah, if they were to see him and know what I know, they would surely
+                    seek to harm him. A great destiny awaits this nephew of yours." Abu Talib quickly returned with
+                    him to Mecca. (This story was narrated by al-Tirmidhi, but some later hadith scholars consider
+                    its chain of transmission to be weak, though it is widely cited in books of Seerah).</p>
 
-                    <h4>Herding Sheep: The Profession of Prophets and a School of Leadership</h4>
-                    <p>As the Prophet, peace and blessings be upon him, grew up in the house of his uncle Abu Talib, who
-                        had little wealth and a large family, he felt a sense of responsibility early on. Motivated by
-                        his self-respect and desire to earn from his own labor, he began working as a shepherd, tending
-                        the flocks of the people of Mecca for a few qararit (a small fraction of a dinar or dirham).
-                        This humble work was a profound divine educational station, for there was no prophet who did not
-                        herd sheep.</p>
-                    <p>It is authentically reported in Sahih al-Bukhari that he, peace and blessings be upon him, said:
-                    <blockquote class="hadith-text">"Allah did not send a prophet except that he was a shepherd."
-                    </blockquote> His companions asked, "And you?" He replied, "Yes, I used to herd them for the people
-                    of Mecca for a few qararit."</p>
-                    <p>The wisdom in herding sheep is immense, as it serves as a comprehensive training program for one
-                        who will lead nations:</p>
-                    <ul>
-                        <li><strong>Teaching Patience and Forbearance:</strong> Sheep are weak animals in need of
-                            constant care. They move slowly and can easily stray. Tending to them requires immense
-                            patience and forbearance—qualities a prophet needs to call his people, endure their harm,
-                            and remain patient with their obstinacy.</li>
-                        <li><strong>Nurturing Mercy and Compassion:</strong> A shepherd deals with the young, weak, and
-                            sick among the flock, showing them kindness and protecting them from wolves. This daily care
-                            cultivates mercy and compassion in his heart, which is the most prominent characteristic of
-                            the Prophet, peace and blessings be upon him: <blockquote class="quran-verse">"And We have
-                                not sent you, [O Muhammad], except as a mercy to the worlds." (Qur'an, Al-Anbiya: 107)
-                            </blockquote>
-                        </li>
-                        <li><strong>Training in Leadership and Governance:</strong> A shepherd is a leader of his flock.
-                            He gathers those that have scattered, brings back those that have strayed, guides them to
-                            the best pastures and water sources, and protects them from dangers. These are the
-                            fundamentals of leadership: managing resources, maintaining unity, and ensuring security.
-                        </li>
-                        <li><strong>Instilling Humility:</strong> Shepherding is far removed from the displays of
-                            arrogance and pride common among the leaders of Quraysh. It is a profession that teaches
-                            humility and service to others.</li>
-                        <li><strong>Providing an Opportunity for Solitude and Contemplation:</strong> The life of a
-                            shepherd in the vast desert provides long hours of solitude, away from the noise of life and
-                            the idle talk of people. This solitude allows for deep reflection on the kingdom of the
-                            heavens and the earth, paving the way for the soul to receive divine revelation.</li>
-                    </ul>
-                    <p>Thus, his youth was filled with lessons and experiences that built his unique character. Between
-                        a journey that revealed his status in previous scriptures and manual labor that taught him
-                        patience, mercy, and leadership, the divine preparation was continuous in every step of his
-                        life.</p>
-                </section>
+                <h4>Herding Sheep: The Profession of Prophets and a School of Leadership</h4>
+                <p>As the Prophet, peace and blessings be upon him, grew up in the house of his uncle Abu Talib, who
+                    had little wealth and a large family, he felt a sense of responsibility early on. Motivated by
+                    his self-respect and desire to earn from his own labor, he began working as a shepherd, tending
+                    the flocks of the people of Mecca for a few qararit (a small fraction of a dinar or dirham).
+                    This humble work was a profound divine educational station, for there was no prophet who did not
+                    herd sheep.</p>
+                <p>It is authentically reported in Sahih al-Bukhari that he, peace and blessings be upon him, said:
+                <blockquote class="hadith-text">"Allah did not send a prophet except that he was a shepherd."
+                </blockquote> His companions asked, "And you?" He replied, "Yes, I used to herd them for the people
+                of Mecca for a few qararit."</p>
+                <p>The wisdom in herding sheep is immense, as it serves as a comprehensive training program for one
+                    who will lead nations:</p>
+                <ul>
+                    <li><strong>Teaching Patience and Forbearance:</strong> Sheep are weak animals in need of
+                        constant care. They move slowly and can easily stray. Tending to them requires immense
+                        patience and forbearance—qualities a prophet needs to call his people, endure their harm,
+                        and remain patient with their obstinacy.</li>
+                    <li><strong>Nurturing Mercy and Compassion:</strong> A shepherd deals with the young, weak, and
+                        sick among the flock, showing them kindness and protecting them from wolves. This daily care
+                        cultivates mercy and compassion in his heart, which is the most prominent characteristic of
+                        the Prophet, peace and blessings be upon him: <blockquote class="quran-verse">"And We have
+                            not sent you, [O Muhammad], except as a mercy to the worlds." (Qur'an, Al-Anbiya: 107)
+                        </blockquote>
+                    </li>
+                    <li><strong>Training in Leadership and Governance:</strong> A shepherd is a leader of his flock.
+                        He gathers those that have scattered, brings back those that have strayed, guides them to
+                        the best pastures and water sources, and protects them from dangers. These are the
+                        fundamentals of leadership: managing resources, maintaining unity, and ensuring security.
+                    </li>
+                    <li><strong>Instilling Humility:</strong> Shepherding is far removed from the displays of
+                        arrogance and pride common among the leaders of Quraysh. It is a profession that teaches
+                        humility and service to others.</li>
+                    <li><strong>Providing an Opportunity for Solitude and Contemplation:</strong> The life of a
+                        shepherd in the vast desert provides long hours of solitude, away from the noise of life and
+                        the idle talk of people. This solitude allows for deep reflection on the kingdom of the
+                        heavens and the earth, paving the way for the soul to receive divine revelation.</li>
+                </ul>
+                <p>Thus, his youth was filled with lessons and experiences that built his unique character. Between
+                    a journey that revealed his status in previous scriptures and manual labor that taught him
+                    patience, mercy, and leadership, the divine preparation was continuous in every step of his
+                    life.</p>
+            </section>
 
-                <section id="s6-s6-conclusion" class="content-section">
-                    <h3>Conclusion: Crafted Under God's Watchful Eye</h3>
-                    <p>Every event in the childhood and youth of the Prophet, peace and blessings be upon him, was not
-                        random but was part of a meticulous divine plan for his upbringing and preparation. His
-                        orphanhood, his upbringing in the desert, the opening of his chest, and his labor with his own
-                        hands were all stages that polished his magnificent character and made him the perfect model for
-                        humanity. He was truly a "divine creation," crafted under Allah's watchful eye, as Allah said to
-                        Prophet Musa (Moses), peace be upon him:
-                    <blockquote class="quran-verse">"...so that you may be brought up under My eye." (Qur'an, Taha: 39)
-                    </blockquote> His entire life before the commission was a prelude and a preparation for him to carry
-                    the greatest message and to guide, by his Lord's permission, to a straight path.</p>
-                </section>
-            </article>
-
+            <section id="s6-s6-conclusion" class="content-section">
+                <h3>Conclusion: Crafted Under God's Watchful Eye</h3>
+                <p>Every event in the childhood and youth of the Prophet, peace and blessings be upon him, was not
+                    random but was part of a meticulous divine plan for his upbringing and preparation. His
+                    orphanhood, his upbringing in the desert, the opening of his chest, and his labor with his own
+                    hands were all stages that polished his magnificent character and made him the perfect model for
+                    humanity. He was truly a "divine creation," crafted under Allah's watchful eye, as Allah said to
+                    Prophet Musa (Moses), peace be upon him:
+                <blockquote class="quran-verse">"...so that you may be brought up under My eye." (Qur'an, Taha: 39)
+                </blockquote> His entire life before the commission was a prelude and a preparation for him to carry
+                the greatest message and to guide, by his Lord's permission, to a straight path.</p>
+            </section>
         </article>
 
+        <article id="session7" class="session-content">
+            <section id="s7-s0-introduction" class="content-section">
+                <h1>Studying the Biography of the Prophet (ﷺ): The Seventh Session</h1>
+                <h2>Preludes to Prophethood: Fashioned Under Allah's Watchful Eye</h2>
+                <p>All praise is due to Allah, and I bear witness that there is no deity worthy of worship except
+                    Allah alone, with no partner, and I bear witness that Muhammad is His servant and Messenger, may
+                    Allah's peace and blessings be upon him. To proceed:</p>
+                <p>We continue our journey in the fragrant biography of our Prophet Muhammad (محمد ﷺ), focusing on
+                    the preludes that preceded his noble mission. This foundational stage of his life (ﷺ), although not
+                    documented with the same meticulous detail as his life after prophethood, contains enough events and
+                    stances to draw a clear and radiant picture of how Allah the Almighty prepared His Prophet and made
+                    him ready to carry the greatest message. Studying this period is not merely a historical narration;
+                    it is an exploration of the divine wisdom in crafting the greatest personality humanity has ever
+                    known, under the watchful eye of divine care.</p>
+                <p>The entire world, with the Arabs at its heart, was living in the darkness of ignorance (Jahiliyyah).
+                    They marked their time by rare major events like the "Year of the Elephant," and later by the
+                    Prophetic mission and the Hijrah, reflecting a lack of civilizational and institutional awareness.
+                    This is why we find discrepancies in dating events before prophethood. However, the established
+                    events draw a clear path for a unique personality that was growing, integrating, and preparing for
+                    the mission of changing the face of history.</p>
+                <p>We can summarize the main stations in the Prophet's ﷺ life before his mission into several specific
+                    age milestones: his birth, then at the ages of two, four, six, eight, twelve, twenty, twenty-five,
+                    thirty-five, and finally, forty years old when the revelation descended. Each of these stages
+                    represents a landmark and a fundamental building block in the formation of his unique character,
+                    which would build a nation and lead humanity to the light.</p>
+            </section>
 
+            <section id="s7-s1-upbringing" class="content-section">
+                <h3>The Blessed Upbringing and Stages of Orphanhood</h3>
+                <p>His journey ﷺ began with a blessed birth accompanied by portents and signs indicating his great
+                    stature. His mother saw a light emanating from her when she gave birth, a light that illuminated the
+                    palaces of Syria (الشام). It was the custom of the Quraysh elite to seek wet nurses for their sons
+                    in the desert, seeking eloquence of the tongue, physical strength, and clarity of mind. In this
+                    context, divine providence willed that his share of nursing would be with Halimah al-Sa'diyah (حليمة
+                    السعدية) in the desert of Banu Sa'd. At first, Halimah (حليمة) hesitated to accept him due to his
+                    being an orphan, but she soon took him so as not to return empty-handed. This was the beginning of
+                    the goodness that never ceased from her home.</p>
+                <p>Blessings descended upon Halimah's (حليمة) house with his presence; she saw goodness in everything.
+                    Halimah (حليمة) narrated that her female donkey, which had been weak and frail, outpaced all other
+                    animals on the way back. Her sheep would return from the pasture satisfied, their udders full of
+                    milk, while her people's sheep would return hungry. This tangible blessing was an early testimony to
+                    his status ﷺ and a sign that goodness descended wherever he was.</p>
+                <p>During this period, when he was four or five years old, the incident of the "Splitting of the Chest"
+                    (شق الصدر) occurred, which is one of the early signs of his prophethood and Allah's preparation for
+                    him. Anas ibn Malik (أنس بن مالك), may Allah be pleased with him, narrates:
+                <blockquote class="hadith-text">"Jibril (جبريل) came to the Messenger of Allah ﷺ while he was playing
+                    with the other boys. He took him, threw him to the ground, and split open his chest. He took out the
+                    heart, and from it, he extracted a clot of blood and said: 'This was the portion of Shaytan (Satan)
+                    in you.' Then he washed it in a golden basin with the water of Zamzam, then sealed it and returned
+                    it to its place." (Narrated by Muslim)</blockquote> This incident was not merely a physical
+                cleansing
+                but a profound divine preparation, readying his noble heart for the sanctity of the revelation it would
+                carry and protecting him from the temptations of Satan, making his heart the purest heart humanity has
+                ever known.</p>
+                <p>When he reached the age of six, he tasted the bitterness of orphanhood again with the death of his
+                    compassionate mother, Aminah bint Wahb (آمنة بنت وهب), on their way back from visiting his father's
+                    maternal uncles, Banu al-Najjar, in Madinah. She passed away at a place called "Al-Abwa'" (الأبواء)
+                    between Makkah and Madinah and was buried there, so he returned to Makkah as an orphan of both
+                    father and mother. These successive events of orphanhood were of profound divine wisdom, so that his
+                    heart would be attached to Allah alone, with no human having a favor over him except Allah, and so
+                    that he would feel the pain of orphans and the weak, and thus be a mercy to them.</p>
+                <p>He then moved into the care of his grandfather, Abd al-Muttalib (عبد المطلب), the leader of Quraysh,
+                    who showered him with a love and affection he did not bestow upon any of his own sons. He saw a
+                    great
+                    future in him, would seat him on his special mattress next to the Kaaba, and would tell his uncles
+                    when they tried to stop him, "Leave my son, for by Allah, he will have a great status." But this
+                    affection did not last long. At the age of eight, his grandfather Abd al-Muttalib (عبد المطلب)
+                    passed
+                    away after entrusting him to his paternal uncle, Abu Talib (أبو طالب). Abu Talib (أبو طالب)
+                    fulfilled
+                    his duty to his nephew in the best way possible, surrounding him with care and protection that
+                    lasted for forty years. He defended him and stood against his enemies with all he had, preferring
+                    him over his own children despite his poverty and large family, and remained a formidable fortress
+                    for him until his death, even though he died upon the religion of his people.</p>
+                <p>This sheltering is a fulfillment of Allah's words:
+                <blockquote class="quran-verse">﴾أَلَمْ يَجِدْكَ يَتِيمًا فَآوَىٰ﴿<br>"Did He not find you an orphan and
+                    give [you] refuge?" (Ad-Duha: 6)</blockquote> This refuge was not limited to the stage of orphanhood
+                but was a continuous state in his life ﷺ, a divine care that never ceased. After the death of his uncle
+                Abu Talib (أبو طالب) and his wife Khadijah (خديجة), who were his greatest supporters, came the journey
+                of Al-Isra' wal-Mi'raj as a heavenly consolation and shelter for him. Then came the Pledge of Aqabah and
+                the sheltering by the Ansar in Madinah, about whom Allah said:
+                <blockquote class="quran-verse">﴾وَالَّذِينَ تَبَوَّءُوا الدَّارَ وَالْإِيمَانَ مِن قَبْلِهِمْ
+                    يُحِبُّونَ مَنْ هَاجَرَ إِلَيْهِمْ﴿<br>"And [also for] those who were settled in Madinah and
+                    [adopted]
+                    the faith before them. They love those who emigrated to them" (Al-Hashr: 9)</blockquote> He remained
+                under their protection and care until he joined the Highest Companion. And above all that was the direct
+                protection and infallibility from Allah, as He promised him:
+                <blockquote class="quran-verse">﴾وَاللَّهُ يَعْصِمُكَ مِنَ النَّاسِ﴿<br>"And Allah will protect you from
+                    the people." (Al-Ma'idah: 67)</blockquote> His life was an unbroken chain of divine care that never
+                falters nor sleeps.</p>
+            </section>
+
+            <div class="mind-map-summary">
+                <h4>Recap: Blessed Upbringing & Divine Care</h4>
+                <ul>
+                    <li><strong>Nursing in the Desert:</strong> Gained eloquence and strength with Halimah al-Sa'diyah,
+                        bringing immense blessings to her household.</li>
+                    <li><strong>Splitting of the Chest:</strong> A direct divine purification of his heart, preparing
+                        him for prophethood and protecting him from evil.</li>
+                    <li><strong>Successive Orphanhood:</strong> The deaths of his mother and grandfather deepened his
+                        reliance on Allah alone.</li>
+                    <li><strong>Continuous Divine Shelter:</strong> From Abd al-Muttalib to Abu Talib, the Ansar, and
+                        Allah's direct protection, he was never without support.</li>
+                </ul>
+            </div>
+
+            <section id="s7-s2-adulthood" class="content-section">
+                <h3>Early Adulthood: A Stage of Early Maturity and Social Consciousness</h3>
+                <p>After moving to his uncle's care, the Prophet ﷺ began to take his first steps toward
+                    responsibility. He worked as a shepherd for the people of Makkah for a few qararit (a small
+                    denomination of currency), a profession of all prophets that teaches patience, humility, mercy,
+                    contemplation, and leadership. The Prophet ﷺ later said,
+                <blockquote class="hadith-text">"Allah did not send a prophet except that he was a shepherd." His
+                    companions asked, "And you?" He said, "Yes, I used to shepherd them for the people of Makkah for a
+                    few qararit." (Narrated by Al-Bukhari)</blockquote>
+                </p>
+                <p>Then, at the age of twelve, came his first journey that opened his eyes to the world outside Makkah,
+                    when his uncle Abu Talib (أبو طالب) took him in a trade caravan to Syria (الشام). In the region of
+                    Busra, he was met by a monk named Bahira (بحيرا), who recognized in him the signs of the final
+                    prophet mentioned in their scriptures, as he saw a cloud shading him and stones and trees
+                    prostrating to him. He took the Prophet's ﷺ hand and said, "This is the master of the worlds, this
+                    is
+                    the messenger of the Lord of the worlds, whom Allah will send as a mercy to the worlds." He warned
+                    his uncle of the danger from the Jews and ordered him to return with him, realizing this boy was
+                    unlike any other.</p>
+                <p>When he reached the age of twenty, the age of full strength and youth, the Prophet ﷺ participated in
+                    two prominent events that shaped his social and moral awareness and demonstrated his early maturity
+                    and noble character:</p>
+                <h4>The Sacrilegious War (Harb al-Fijar): A Testimony to the Ugliness of Tribalism</h4>
+                <p>This war was named so, derived from "fujur" (immorality), because it occurred during the Sacred
+                    Months
+                    (Dhul-Qa'dah, Dhul-Hijjah, Muharram, and Rajab), which was considered a transgression and a
+                    violation
+                    of a sacred sanctity among all Arabs, inherited from the religion of Ibrahim (Abraham). These months
+                    were a period of safety for trade and pilgrimage, and fighting in them was one of the greatest sins
+                    in their customs.</p>
+                <h5>Cause and Development of the War</h5>
+                <p>This war took place between the tribe of Kinanah (to which Quraysh belonged) and their allies, and
+                    the tribe of Qays Aylan and their allies. The direct cause was that a man from Banu Kinanah
+                    treacherously killed a man from Qays Aylan over a dispute about protecting a trade caravan. The fire
+                    of war ignited, and due to tribal allegiance, Banu Hashim became involved in the war to defend their
+                    allies from Kinanah after the aggression extended to them.</p>
+                <h5>The Prophet's ﷺ Stance</h5>
+                <p>The Prophet's ﷺ role in this war, in which he had no personal stake, was purely defensive and never
+                    offensive. He witnessed the ugliness of tribal warfare and mutual injustice, but his pure nature
+                    refused anything but to support his people in a position of self-defense, not to participate in
+                    oppression and aggression. He summarized his noble role himself when he said, "I used to gather the
+                    arrows for my uncles," meaning he would collect arrows and hand them to them to defend themselves,
+                    and he would deflect the enemy's arrows from them. This stance shows his innate hatred for
+                    bloodshed, and at the same time, his courage and standing with his family in the face of aggression.
+                    This experience was a deep practical lesson in understanding the consequences of ignorance and
+                    tribalism, which polished his character and increased his maturity and wisdom, and his hatred for
+                    all
+                    forms of injustice and aggression.</p>
+                <h4>The Alliance of the Virtuous (Hilf al-Fudul): A Victory for Human Values of Justice</h4>
+                <p>Shortly after the Sacrilegious War, and in the same sacred month according to one account, the
+                    Prophet ﷺ witnessed one of the noblest alliances known to the Arabs in the pre-Islamic era, the
+                    "Hilf
+                    al-Fudul" (The Alliance of the Virtuous).</p>
+                <h5>The Story of the Alliance</h5>
+                <p>It began when a man from Zubayd (from Yemen) sold goods to Al-'As ibn Wa'il al-Sahmi (العاص بن وائل
+                    السهمي), one of the notables of Makkah, who then denied the man his right and stalled him. The
+                    wronged man sought help from Al-'As's allies but found no support. So he climbed Mount Abu Qubays at
+                    sunrise and loudly recited poetry complaining of his injustice and calling for help from the people
+                    of chivalry in Makkah. His words stirred the honor of those with noble souls. A number of noble
+                    clans of Quraysh (Banu Hashim, Banu al-Muttalib, Banu Asad, Zuhrah, and Taym) gathered in the house
+                    of
+                    Abdullah ibn Jud'an al-Taymi (عبد الله بن جدعان التيمي), a man known for his generosity and
+                    chivalry.</p>
+                <h5>The Pact and its Importance</h5>
+                <p>There, they made a pact and swore an oath "that they would not find any oppressed person in Makkah,
+                    whether from its people or others, except that they would stand with him, and they would be against
+                    his oppressor until his right was returned to him, as long as a sea could wet a tuft of wool." It
+                    was
+                    a unique humanitarian pact of honor, aimed at establishing justice and protecting the weak in an
+                    environment dominated by the law of power and tribalism.</p>
+                <h5>The Prophet's ﷺ Testimony to it</h5>
+                <p>The Prophet ﷺ attended this alliance, and it had a profound effect on him, and he remained proud of
+                    it throughout his life. He praised it greatly after prophethood, saying,
+                <blockquote class="hadith-text">"I witnessed in the house of Abdullah ibn Jud'an an alliance which I
+                    would not love to have in exchange for red camels, and if I were called to it in Islam, I would
+                    respond." (Narrated by Al-Bayhaqi and deemed hasan by Al-Albani)</blockquote>
+                </p>
+                <h5>Analysis of the Testimony</h5>
+                <p>This statement has great implications. "Red camels" were the most precious and valuable property of
+                    the Arabs, and his participation in this alliance was dearer to him than them, which indicates the
+                    supremacy of moral values over all material things in his view. His saying, "If I were called to it
+                    in Islam, I would respond," establishes a great Islamic principle: that Islam came to perfect noble
+                    morals, not to abolish them, and that every noble value that aligns with the principles of justice
+                    and mercy is from the core of Islam, whether it comes from a Muslim or a non-Muslim. This
+                    participation was an early portent of his universal message based on supporting the oppressed and
+                    establishing justice for all people.</p>
+            </section>
+
+            <div class="mind-map-summary">
+                <h4>Recap: Early Adulthood & Social Maturity</h4>
+                <ul>
+                    <li><strong>Shepherding:</strong> A profession of all prophets that taught him patience, mercy,
+                        humility, and leadership.</li>
+                    <li><strong>Journey to Syria:</strong> His unique status was recognized by the monk Bahira, who saw
+                        the signs of prophethood in him.</li>
+                    <li><strong>Harb al-Fijar:</strong> A practical lesson in the ugliness of tribal warfare, where he
+                        played a purely defensive role.</li>
+                    <li><strong>Hilf al-Fudul:</strong> His participation in this pact for justice showed his innate
+                        love for supporting the oppressed, a core value he later affirmed in Islam.</li>
+                </ul>
+            </div>
+
+            <section id="s7-s3-trade-marriage" class="content-section">
+                <h3>Honorable Trade and Blessed Marriage: Building the Family and the First Pillar of Support</h3>
+                <p>After the Prophet ﷺ grew up and gained life experience through shepherding and participating in
+                    social events, he turned to the field of work that was the lifeblood of Quraysh: trade. For him,
+                    trade was not just a means of earning a livelihood, but a broader field in which his great morals,
+                    built over the years, were demonstrated. It was a practical test of his truthfulness and
+                    trustworthiness in a materialistic society built on trust.</p>
+                <h4>"As-Sadiq Al-Amin": The Real Capital and a Reputation that Precedes</h4>
+                <p>In a society like Makkah, where verbal contracts and trust were the basis of transactions, reputation
+                    was the real capital. Here, the star of Muhammad ﷺ rose not just as a skilled trader, but as a man
+                    unparalleled in his honesty and truthfulness. He was known to never cheat, deceive, or break a
+                    promise, to the point that he was nicknamed "As-Sadiq Al-Amin" (الصادق الأمين) - The Truthful, the
+                    Trustworthy. This was not a passing nickname, but a consensus testimony from an entire society,
+                    including his later enemies, on his absolute integrity. This good reputation was the divine
+                    preparation for people to later trust his truthfulness when he would inform them about the heavens.
+                    For if he never lied to people about a dirham or a dinar, how could one imagine him lying about
+                    Allah
+                    concerning the message?</p>
+                <h4>Khadijah "At-Tahirah": A Meeting of Honor and Wisdom</h4>
+                <p>This fragrant reputation reached Lady Khadijah bint Khuwaylid (خديجة بنت خويلد), who was one of the
+                    noblest women of Quraysh in lineage, the wealthiest, and the most sound in judgment. She was not
+                    just a wealthy lady, but a respected figure who enjoyed everyone's esteem, to the extent that she
+                    was
+                    known in the pre-Islamic era as "At-Tahirah" (الطاهرة) - The Pure One for her chastity and honor.
+                    She
+                    was a wise businesswoman who managed her trade herself and hired men to trade with her money. When
+                    she heard about "As-Sadiq Al-Amin," she saw in him the perfect person whom she could entrust with
+                    her
+                    greatest trade ventures.</p>
+                <h4>The Journey to Syria: A Blessed Trade and a Heavenly Testimony</h4>
+                <p>She offered him to go on a trade journey to Syria with her trusted servant, Maysarah (ميسرة), and
+                    promised him double what she gave other traders, as an honor to him and a sign of her trust in his
+                    honesty. The Prophet ﷺ accepted this offer and set out on his second trade journey to Syria. This
+                    journey was a turning point. The caravan returned with an abundant profit and a blessing that Lady
+                    Khadijah (خديجة) had never experienced before. But more important than the material profit was the
+                    report that Maysarah (ميسرة) gave to his mistress.</p>
+                <p>It was not a financial report about profits and losses, but a living testimony to the amazing
+                    character of Muhammad ﷺ. Maysarah (ميسرة) described in detail to his mistress his absolute honesty
+                    in
+                    buying and selling, his chastity from all that is shameful, his wisdom in dealing with people, and
+                    his manners that captivated the hearts of those he met. Most importantly, he told her about the
+                    miracles and portents he saw with his own eyes:</p>
+                <ul>
+                    <li><strong>The Shade of the Cloud:</strong> He mentioned that he saw two angels shading him from
+                        the scorching sun throughout the journey.</li>
+                    <li><strong>The Monk's Testimony:</strong> When he stopped to rest under a tree near the monastery
+                        of a monk named "Nastur" (نسطور), the monk looked at him and recognized the signs of the final
+                        prophet mentioned in the holy books, and said to Maysarah (ميسرة): "None has ever rested under
+                        this tree except a prophet."</li>
+                </ul>
+                <h4>The Blessed Marriage: An Enduring Proposal and a Lasting Support</h4>
+                <p>When the wise Lady Khadijah (خديجة) heard this, she became certain that she was not in the presence
+                    of an ordinary man, but someone with a great status and a brilliant future. It occurred to her heart
+                    that she had found the great man she had wished for as a husband. He combined perfect morals, honor,
+                    and lineage, in addition to the special blessing and divine care she had witnessed surrounding
+                    him.</p>
+                <p>In a manner that combined wisdom and modesty, she sent her close friend Nafisah bint Munabbih (نفيسة
+                    بنت منبه) to gauge the Prophet's ﷺ interest in marriage. Nafisah (نفيسة) approached him and cleverly
+                    said, "O Muhammad, what prevents you from getting married?" He replied with simplicity and humility,
+                    "I do not have the means to marry." She said, "And if that were taken care of for you, and you were
+                    invited to wealth, beauty, and honor, would you not accept?" He asked, "Who is she?" She replied,
+                    "Khadijah (خديجة)." He said, astonished at this generous offer, "And how could that be for me?" She
+                    said, "Leave it to me." The Prophet ﷺ agreed, recognizing her virtue and honor.</p>
+                <p>After this initial agreement, the matter proceeded through official channels befitting the honor of
+                    the two families. The Prophet ﷺ went with his uncles, led by his guardian and protector Abu Talib
+                    (أبو
+                    طالب), to ask for her hand from her uncle, Amr ibn Asad. Abu Talib (أبو طالب) stood and delivered a
+                    timeless, eloquent speech, which was a great testimony to his nephew. He said:
+                <blockquote>"Praise be to Allah Who made us from the progeny of Ibrahim (Abraham), the descendants of
+                    Isma'il (Ishmael)... and made us rulers over the people. Furthermore, this nephew of mine, Muhammad
+                    ibn Abdullah (محمد بن عبد الله), no man from Quraysh can be weighed against him but that he would
+                    outweigh him in honor, nobility, virtue, and intellect. And though he may have little wealth, wealth
+                    is a passing shadow and a transient affair... And by Allah, after this, he will have great news and
+                    a magnificent destiny."</blockquote>
+                </p>
+                <p>These words were a declaration of Muhammad's ﷺ unique status and a prediction of his great future,
+                    which Allah showed Abu Talib (أبو طالب) through his foresight. The blessed marriage took place when
+                    he was twenty-five years old, while she was forty. This marriage was not merely a social union but a
+                    divine arrangement. It provided him with material and psychological stability, and most importantly,
+                    gave him a life partner who was the best of wives and supporters. She bore him all his children
+                    except Ibrahim (إبراهيم), was a help to him in the burdens of life, and was the first to believe in
+                    him, affirm his truthfulness, and comfort him when the revelation came. She was truly the first
+                    pillar upon which his message was built.</p>
+            </section>
+
+            <div class="mind-map-summary">
+                <h4>Recap: Trade and Marriage</h4>
+                <ul>
+                    <li><strong>As-Sadiq Al-Amin:</strong> His reputation for truthfulness and trustworthiness was his
+                        greatest asset and a divine preparation for his message.</li>
+                    <li><strong>Partnership with Khadijah:</strong> His honesty and the blessings he brought led the
+                        wise and pure Khadijah to entrust her trade to him.</li>
+                    <li><strong>Heavenly Testimonies:</strong> The trade journey to Syria provided further signs of his
+                        prophethood, witnessed by Maysarah.</li>
+                    <li><strong>The Blessed Marriage:</strong> Their union was a divine plan, providing the Prophet ﷺ
+                        with stability and his first and greatest supporter.</li>
+                </ul>
+            </div>
+
+            <section id="s7-s4-kaaba" class="content-section">
+                <h3>Rebuilding the Kaaba and the Wise Arbitration: A Testimony to a Wisdom that Would Change the World
+                </h3>
+                <p>When the Prophet ﷺ reached the age of thirty-five, five years before his mission, the Kaaba was
+                    subjected to two events that weakened its structure: first, a great flood swept through Makkah and
+                    entered the Kaaba, causing its walls to crack. Second, a fire broke out when a woman was perfuming
+                    the Kaaba with incense; a spark flew from her censer, burning the Kaaba's covering and weakening its
+                    stones.</p>
+                <p>At that time, the Kaaba was a simple structure of stones stacked on top of each other without mortar,
+                    shorter than a man's height, and without a roof, which left its treasures vulnerable to theft.
+                    Quraysh gathered and decided that it was urgent to rebuild it in a manner befitting its status, but
+                    they were hesitant to demolish it, fearing that a punishment would befall them; the story of Abrahah
+                    and his army was still fresh in their memory.</p>
+                <h4>The Condition of Lawful Money and the Awe of the Ancient House</h4>
+                <p>It is a curious matter that Quraysh, despite being steeped in their idolatry, agreed on a great
+                    principle: not to include in the construction of the Kaaba anything but pure, lawful money. They
+                    said, "O people of Quraysh, do not include in its construction from your earnings anything but what
+                    is good. Do not let the dowry of a prostitute, the proceeds of usury, or the ill-gotten gains from
+                    oppressing anyone enter into it." This reveals remnants of the religion of Ibrahim (Abraham) in
+                    their
+                    souls and their innate understanding that the House of Allah should only be built with what is
+                    pure.</p>
+                <p>However, the lawful money they collected was not enough to complete the building on the complete
+                    foundations of Ibrahim (Abraham) and Isma'il (Ishmael). They were forced to shorten the building on
+                    the northern side, leaving out about six cubits, and they built a short wall around it to let people
+                    know that this part was from the Kaaba. This part is what is known today as the "Hijr Isma'il" (حِجر
+                    إسماعيل) or "Al-Hatim." The Prophet ﷺ later said to A'ishah after Islam, "Were it not that your
+                    people are newly from a state of disbelief, I would have demolished the Kaaba and rebuilt it on the
+                    foundations of Ibrahim." (Agreed upon).</p>
+                <p>They began the work. After hesitation and fear, Al-Walid ibn al-Mughirah was the first to dare,
+                    taking the pickaxe and starting the demolition, saying, "O Allah, we only intend good." The people
+                    waited a full night to see if any harm would befall him. When he was safe the next morning, they
+                    were
+                    encouraged and began demolishing with him until they reached the foundations of Ibrahim (Abraham).
+                </p>
+                <h4>The Crisis of the Black Stone: A War on the Brink of Eruption</h4>
+                <p>Things went smoothly, and the tribes shared in the construction, each tribe building a section. Until
+                    they reached the decisive moment: the placement of the Black Stone (الحجر الأسود). The tribes
+                    differed and disputed fiercely, as each tribe wanted to attain the honor of lifting it and placing
+                    it in its spot. It was not just a stone, but a gem from the gems of Paradise as mentioned in the
+                    hadith, and it held great religious symbolism.</p>
+                <p>The dispute intensified and lasted for four or five nights, and a civil war was about to ignite in
+                    Makkah. The situation escalated to the point that Banu Abd al-Dar brought a bowl filled with blood,
+                    and they and their allies, Banu 'Adi, made a pact to die for this honor, dipping their hands in the
+                    blood in what was known as the "Pact of the Lickers of Blood" (لعقة الدم), a sign that they would
+                    not
+                    relinquish this honor even if it cost them their lives.</p>
+                <h4>The Wise Arbitration: "This is Al-Amin, We Are Pleased"</h4>
+                <p>In the midst of this crisis, Abu Umayyah ibn al-Mughirah al-Makhzumi (أبو أمية بن المغيرة المخزومي),
+                    who was the eldest and wisest of Quraysh, came forward with a proposal to end the dispute. He said,
+                    "O people of Quraysh, let the first person to enter through this gate of the mosque (the gate of
+                    Banu Shaybah) be the judge between you in what you differ." This was a compromising solution that
+                    satisfied everyone's pride. They agreed and sat waiting to see who would enter.</p>
+                <p>And divine providence willed that the first to enter was Muhammad ﷺ. When they saw him, their faces
+                    lit up, and they all exclaimed in one voice filled with joy and reassurance:
+                <blockquote>"This is Al-Amin (the Trustworthy), we are pleased with him. This is Muhammad (محمد)."
+                </blockquote>
+                </p>
+                <p>This choice was not a coincidence; it was a collective testimony to the status he had reached in the
+                    hearts of his people. They did not say "This is the son of Abdullah" or "This is the Hashimite," but
+                    they described him by the quality that was the title of his character: Trustworthiness.</p>
+                <h4>The Prophet's Ingenious Solution</h4>
+                <p>When he reached them and they informed him of the dispute, he handled the situation with unparalleled
+                    wisdom, a wisdom that was not born of the moment but was a divine guidance. He did not side with his
+                    tribe, nor did he impose his opinion. Instead, he presented a collaborative solution that saved
+                    everyone's face:</p>
+                <ul>
+                    <li>He asked for a cloak and spread it on the ground.</li>
+                    <li>He placed the Black Stone in its center with his own noble hands.</li>
+                    <li>Then he said, "Let each tribe take a side of the cloak, then lift it all together."</li>
+                </ul>
+                <p>They did as he commanded, and thus all the tribes shared in the honor of lifting the stone. When they
+                    reached its position, he took it with his blessed hand and placed it in its spot, then they built
+                    around it.</p>
+                <p>With this ingenious solution that had not occurred to anyone, all the tribes gained the honor of
+                    participation, bloodshed was prevented, and Makkah avoided a devastating civil war. This incident,
+                    as narrated in books of Seerah like that of Ibn Hisham, was a great portent and a practical proof of
+                    his exceptional leadership personality. His wisdom and high standing among his people as a unique,
+                    unifying figure became apparent, just five years before his mission, as if Allah was psychologically
+                    preparing them to accept his leadership in the future, not just as a political ruler, but as a
+                    Prophet and Messenger who would unite their ranks and build their nation.</p>
+            </section>
+
+            <div class="mind-map-summary">
+                <h4>Recap: Rebuilding the Kaaba (Age 35)</h4>
+                <ul>
+                    <li><strong>A Collective Effort:</strong> Quraysh united to rebuild the Kaaba but were limited by
+                        their lawful earnings.</li>
+                    <li><strong>The Black Stone Crisis:</strong> A dispute over the honor of placing the stone nearly
+                        led to civil war.</li>
+                    <li><strong>The Trustworthy Arbitrator:</strong> By divine will, Muhammad ﷺ was chosen as the
+                        judge, and all tribes accepted him, calling him "Al-Amin."</li>
+                    <li><strong>An Inspired Solution:</strong> His wisdom in having all tribes share the honor saved
+                        Makkah from bloodshed and demonstrated his unique leadership qualities.</li>
+                </ul>
+            </div>
+
+            <section id="s7-s5-infallibility" class="content-section">
+                <h3>Divine Infallibility Before Prophethood: A Divine Preparation for the Seal of the Messengers</h3>
+                <p>One of the greatest proofs of his prophethood ﷺ is his perfect life before the mission. His
+                    prophethood was not a sudden event in the life of an ordinary man, but the culmination of forty
+                    years
+                    of divine care and exceptional divine protection, which is known as Ismah (العصمة) - Infallibility.
+                    Allah the Almighty protected and cared for His Prophet ﷺ from his youth, preserving him from all the
+                    filth and impurities of the pre-Islamic era of ignorance, whether in beliefs, morals, or behaviors.
+                </p>
+                <h4>Comprehensive Purity and Absolute Chastity</h4>
+                <p>This infallibility was comprehensive, covering all aspects of his life:</p>
+                <ul>
+                    <li><strong>In Belief:</strong> He never prostrated to an idol, nor did he ever touch one. In fact,
+                        his pure nature intensely disliked idols. It is narrated that he told a man who asked him to
+                        swear by Al-Lat and Al-Uzza: "I have never sworn by them. I pass by them and turn away." He
+                        raised those under his care on this principle as well. Zayd ibn Harithah was circumambulating
+                        the Kaaba with him and touched an idol, and the Prophet ﷺ forbade him. When Zayd touched it
+                        again, the Prophet ﷺ forbade him sternly, and Zayd never touched an idol again.</li>
+                    <li><strong>In Morals and Conduct:</strong> He never drank alcohol, never ate what was slaughtered
+                        on stone altars for idols, and never participated in their vain gatherings or idolatrous
+                        celebrations. Most importantly, he was never known to have told a single lie in his life,
+                        neither in seriousness nor in jest, to the point that even his enemies testified to this. He
+                        also
+                        never betrayed a trust; they would deposit their valuables with him for safekeeping even while
+                        they were at war with him.</li>
+                    <li><strong>In Modesty and Integrity:</strong> He was known for his dignity, intense modesty, and
+                        sound mind. One of the most telling proofs of this is what happened to him as a young man during
+                        the rebuilding of the Kaaba. He was carrying stones with his people, who had uncovered their
+                        lower garments to place them on their shoulders as protection from the stones. He ﷺ said: "I
+                        uncovered my lower garment and placed it on my shoulder, and I fell down unconscious. After that
+                        day, I was never seen naked." In another narration, his uncle Al-Abbas said to him, "O son of my
+                        brother, why don't you place your garment on your shoulder over the stones?" He did so, and fell
+                        down unconscious, his eyes fixed on the sky. He then awoke saying, "My garment, my garment," and
+                        he fastened it securely. This incident was a direct divine protection of his modesty and
+                        covering.</li>
+                </ul>
+                <h4>Divine Protection Even from Fleeting Thoughts</h4>
+                <p>This infallibility was not limited to major actions but even included minor things that a young man
+                    might consider. He narrated that he said: "I never intended to do anything that the people of the
+                    era of ignorance used to do except for two times, and in both instances, Allah intervened between me
+                    and them."</p>
+                <p>He mentioned that in his youth, he wanted to join other young men at a wedding celebration in Makkah
+                    as they used to do. The first time, as soon as he reached the place of the celebration, Allah made
+                    him fall asleep, and he was not awakened until by the heat of the sun the next day. The second time,
+                    the same thing happened to him. Then the Prophet ﷺ said, "By Allah, I never intended any evil after
+                    that until Allah honored me with His message." (The hadith is narrated by Al-Bayhaqi in Dala'il
+                    al-Nubuwwah and others. Although there is some debate about its chain of narration, its meaning is
+                    sound and consistent with his established perfect character).</p>
+                <p>There is a profound indication in this hadith: The thought and desire are natural human inclinations,
+                    and this proves his humanity. But the direct divine intervention preventing him from even attending
+                    proves his specialty and his infallibility. Allah was protecting and preserving him even from the
+                    simplest forms of amusement that might not be inherently forbidden but were not befitting of the
+                    station for which he was being prepared.</p>
+                <h4>The Wisdom of Infallibility: His Life is the Greatest Proof of His Truthfulness</h4>
+                <p>Thus, Allah prepared His Prophet ﷺ to be the Seal of the Prophets and Messengers, with an integrated,
+                    pure, wise personality, and a subject of trust and consensus among his people. His life before the
+                    mission was the practical proof of his truthfulness. When the revelation came to him and he called
+                    them to Allah, his staunchest enemies could not find in his forty-year history a single blemish or a
+                    flaw in his character or behavior to use as an argument against him.</p>
+                <p>His life was the irrefutable argument that silenced them, which is what Allah commanded him to
+                    confront them with in the Holy Qur'an:
+                <blockquote class="quran-verse">﴾قُل لَّوْ شَاءَ اللَّهُ مَا تَلَوْتُهُ عَلَيْكُمْ وَلَا أَدْرَاكُم بِهِ
+                    ۖ فَقَدْ لَبِثْتُ فِيكُمْ عُمُرًا مِّن قَبْلِهِ ۚ أَفَلَا تَعْقِلُونَ﴿<br>"Say, [O Muhammad], 'If
+                    Allah
+                    had willed, I would not have recited it to you, nor would He have made it known to you. For I had
+                    remained among you a lifetime before it. Then will you not reason?'" (Yunus: 16)</blockquote>
+                </p>
+                <p>The meaning of the verse is: How can you doubt my truthfulness as I bring you this Qur'an, when I
+                    have
+                    lived among you for forty years before revealing anything to you, during which you knew my
+                    truthfulness, my trustworthiness, and my perfection, and you never found me telling a single lie or
+                    committing a single betrayal? Will you not then use your intellect to realize that one who did not
+                    lie to people for forty years will not then come to lie about Allah at the peak of his maturity and
+                    perfection?</p>
+                <p>His entire life was a pure white page, and a speaking witness that he was "As-Sadiq Al-Amin" - The
+                    Truthful, the Trustworthy - even before he uttered the message.</p>
+            </section>
+
+            <div class="mind-map-summary">
+                <h4>Recap: Divine Infallibility Before Prophethood</h4>
+                <ul>
+                    <li><strong>A Perfect Life:</strong> Allah protected him from all the impurities of Jahiliyyah in
+                        belief, morals, and conduct.</li>
+                    <li><strong>Comprehensive Purity:</strong> He never worshipped idols, drank alcohol, lied, or
+                        betrayed a trust. His modesty was divinely guarded.</li>
+                    <li><strong>Protection from Minor Lapses:</strong> Divine intervention even prevented him from
+                        attending youthful gatherings unbecoming of his future status.</li>
+                    <li><strong>The Ultimate Proof:</strong> His 40-year flawless record was the greatest proof of his
+                        truthfulness when he received the revelation, a fact highlighted in the Qur'an.</li>
+                </ul>
+            </div>
+        </article>
+
+        <article id="session8" class="session-content">
+            <section id="s8-s0-introduction" class="content-section">
+                <h1>From the Building of the Kaaba to the Cave of Hira: A Deep Study into the Precursors of
+                    Prophethood and the Beginning of Revelation</h1>
+                <p>Praise be to Allah, we bear witness that there is no god but Allah alone, with no partner, and we
+                    bear witness that Muhammad is His servant and Messenger, may Allah's peace and blessings be upon
+                    him. To proceed:</p>
+                <p>The study of the Prophet's biography (Seerah) is not merely a review of historical events, but a
+                    profound journey of faith and intellect aimed at understanding the wisdom of the divine law and the
+                    methodology of prophethood. In this session, we continue our journey through the life of the Chosen
+                    One, peace be upon him, addressing a critical and decisive phase: the period immediately preceding
+                    his divine commission, with its harbingers and signs, leading up to the momentous instant when the
+                    earth met the heavens—the moment of the revelation's descent. Our approach in this study is
+                    comprehensive, seeking to connect the ethical, creedal, political, and social aspects of the Seerah
+                    to derive lessons and morals that illuminate our path in our contemporary reality.</p>
+            </section>
+
+            <section id="s8-s1-kaaba-wisdom" class="content-section">
+                <h2>The Wisdom of Keeping the Kaaba on the Foundation of Quraysh: A Prophetic Lesson in the Fiqh of
+                    Interests and Harms</h2>
+                <p>The Holy Kaaba (<span class="arabic-term">الكعبة المشرفة</span>) stands in the heart of Mecca (<span
+                        class="arabic-term">مكة المكرمة</span>), majestic and revered, to which the hearts of millions
+                    of Muslims are drawn. It is the first house established for mankind, the focal point of their
+                    worship, and the symbol of their unity. However, many who contemplate its history might wonder: Why
+                    did the Prophet (<span class="arabic-term">محمد صلى الله عليه وسلم</span>), after Allah empowered
+                    him on earth and he conquered Mecca, not rebuild it upon its original foundations laid by our father
+                    Abraham (<span class="arabic-term">إبراهيم عليه السلام</span>)? And why did it remain in the form
+                    that Quraysh built it, which, due to a shortage of lawful funds, they were forced to shorten,
+                    leaving out a portion known today as the "Hijr of Ishmael" (<span class="arabic-term">حجر
+                        إسماعيل</span>)?</p>
+                <p>The answer to this question lies not in weakness or inability, but in the depth of prophetic wisdom
+                    and its application of a great principle of Islamic law: <strong>"Warding off harm takes precedence
+                        over acquiring benefits"</strong> (<span class="arabic-term">Dar' al-mafasid awla min jalb
+                        al-manafi'</span>). This prophetic stance is not just a historical event but a complete
+                    methodology in leadership and understanding reality, teaching the nation how to balance between an
+                    anticipated good and an expected evil.</p>
+
+                <h3>Historical Context: From Abraham's Construction to that of Quraysh</h3>
+                <p>To understand the wisdom of the Prophet's decision, we must revisit the history of the Kaaba's
+                    construction.</p>
+                <p><strong>The Abrahamic Foundation:</strong> Abraham (<span class="arabic-term">إبراهيم</span>) and
+                    his son Ishmael (<span class="arabic-term">إسماعيل</span>), peace be upon them, built the Kaaba by
+                    Allah's command, as He says:
+                <blockquote class="quran-verse">﴾And [mention] when Abraham was raising the foundations of the House and
+                    [with him] Ishmael, [saying], "Our Lord, accept [this] from us. Indeed, You are the Hearing, the
+                    Knowing."﴿ [Al-Baqarah: 127]<br>(﴿وَإِذْ يَرْفَعُ إِبْرَاهِيمُ الْقَوَاعِدَ مِنَ الْبَيْتِ
+                    وَإِسْمَاعِيلُ رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ﴾)</blockquote> Its
+                original structure was rectangular, including what is now the "Hijr of Ishmael" within it. It had two
+                doors level with the ground—one on the east for entry and one on the west for exit, to make it easy for
+                people.</p>
+                <p><strong>The Construction of Quraysh:</strong> Five years before the Prophet's mission, the Kaaba was
+                    damaged by a severe flood that weakened its structure. Quraysh gathered to rebuild it, stipulating
+                    that they would only use lawful money, free from the proceeds of prostitution, usury, or injustice.
+                    Due to the scarcity of the lawful funds they collected, they fell short of completing the building
+                    on
+                    Abraham's original foundations. This resulted in several fundamental changes:</p>
+                <ul>
+                    <li><strong>Shortening the Structure:</strong> They excluded the northern part, now known as the
+                        "Hijr of Ishmael," and surrounded it with a low wall to indicate it was part of the House.</li>
+                    <li><strong>Raising the Door:</strong> They raised the door of the Kaaba above ground level to
+                        control who entered, allowing whom they wished and preventing whom they wished.</li>
+                    <li><strong>Closing the Western Door:</strong> They settled for one door and sealed the other.</li>
+                </ul>
+                <p>"This change in the door design was not merely an architectural necessity but a decision reflecting
+                    Quraysh's desire to impose their sovereignty over the House. Abraham's original design, peace be
+                    upon
+                    him, included two doors at ground level, one east for entry and one west for exit, facilitating ease
+                    for people and embodying the simplicity of the faith. As for Quraysh, they closed the western door
+                    and intentionally raised the single eastern door to control who entered and who was barred, saying
+                    amongst themselves: 'So that none may enter except those we wish.' They made the House of Allah
+                    exclusive to whomever they pleased, which was something the Prophet (<span class="arabic-term">صلى
+                        الله عليه وسلم</span>) wished to change."</p>
+                <p>When the construction reached the location of the Black Stone (<span class="arabic-term">الحجر
+                        الأسود</span>), the tribes disputed over who would have the honor of placing it. They were on
+                    the verge of fighting until the wise young Muhammad (<span class="arabic-term">صلى الله عليه
+                        وسلم</span>) spread his cloak, placed the stone in its center, and commanded the chiefs of the
+                    tribes to lift it together. It was a solution that satisfied everyone and prevented bloodshed.</p>
+
+                <h3>The Prophetic Wish and Profound Wisdom</h3>
+                <p>After the conquest of Mecca, the Prophet (<span class="arabic-term">صلى الله عليه وسلم</span>)
+                    possessed the power and ability to fulfill his wish of restoring the Kaaba to its state in the time
+                    of Abraham (<span class="arabic-term">عليه السلام</span>). But he did not, for the reason he
+                    explained to the Mother of the Believers, Aisha (<span class="arabic-term">عائشة</span>), may Allah
+                    be pleased with her, in the authentic hadith:
+                <blockquote class="hadith-text">"O Aisha, were your people not recently from a time of ignorance
+                    (Jahiliyyah), I would have demolished the Kaaba and joined it to the ground, and I would have made
+                    for it two doors: an eastern door and a western door. And I would have added to it six cubits from
+                    the Hijr, for the Quraysh made it smaller when they built the Kaaba." (Agreed upon - <span
+                        class="arabic-term">متفق عليه</span>).</blockquote>
+                </p>
+                <p>This hadith reveals a delicate balance between benefit and harm:</p>
+                <p>"His statement, 'were your people not recently from a time of ignorance,' is not just a reference to
+                    their recent conversion to Islam, but a precise diagnosis of a deep psychological, creedal, and
+                    social condition. Jahiliyyah was not merely disbelief; it was an integrated system of customs,
+                    tribalism, and boasting of lineage and status. The rebuilding of the Kaaba by Quraysh was one of
+                    their greatest points of pride. Had the Prophet (<span class="arabic-term">صلى الله عليه
+                        وسلم</span>) demolished the Kaaba, they would not have viewed it from the perspective of
+                    correcting the structure to its Abrahamic origin. Instead, they would have seen it from a purely
+                    ignorant perspective: 'Muhammad has destroyed our pride and glory to establish glory for himself.'
+                    This was the entry point for Satan that the Prophet (<span class="arabic-term">صلى الله عليه
+                        وسلم</span>) feared, as it would strike the chord of tribalism and جاهلي pride that had not yet
+                    been fully eradicated from the souls of many."</p>
+                <ul>
+                    <li><strong>The Benefit (Acquiring Benefits):</strong> Rebuilding the Kaaba on Abraham's
+                        foundations, facilitating entry and exit for people, and completing the House as Allah first
+                        intended. This is undoubtedly a great religious benefit.</li>
+                    <li><strong>The Harm (Warding off Harms):</strong> The harm the Prophet (<span
+                            class="arabic-term">صلى الله عليه وسلم</span>) feared was not just a dispute, but a trial
+                        (fitna) in the religion that could lead to apostasy. Quraysh and those around them were new to
+                        Islam, and faith had not yet been firmly established in their hearts. If he had demolished the
+                        Kaaba, Satan would have found a wide-open door to whisper to them: "Look, Muhammad was not a
+                        prophet, but was ambitious for worldly matters. After gaining power over you, he began
+                        demolishing your sanctities to achieve personal glory." This doubt was capable of shaking their
+                        weak faith and opening a door to apostasy and disbelief.</li>
+                </ul>
+                <p>Here, the great prophetic wisdom is manifest: preserving the people's faith and safeguarding their
+                    creed is the greatest of all interests, and it takes precedence over any other interest, no matter
+                    how great, even if it relates to the holiest place on Earth. The Kaaba remaining in an incomplete
+                    form with the people remaining firm in their faith was better than completing its structure at the
+                    risk of them being tested in their religion.</p>
+                <p>This prophetic stance teaches us a practical lesson in the concept of "moral incapacity" (<span
+                        class="arabic-term">العجز المعنوي</span>). Incapacity is not always physical. A person may have
+                    the full ability to do something but refrains, not from weakness, but because they see that the
+                    moral, social, or religious harm resulting from their action is far greater than the benefit hoped
+                    for. We use this delicate balance in our daily lives without realizing it. The young man who is able
+                    to travel abroad for a better-paying job may refrain, becoming "morally incapable" of traveling
+                    because his sick mother needs him; caring for his mother is a greater interest than his material
+                    gain. Similarly, a merciful father holds his child for a painful injection; he overcomes the
+                    temporary harm of his child's pain and crying because the benefit of his healing is greater and more
+                    lasting. The Prophet (<span class="arabic-term">صلى الله عليه وسلم</span>) was physically capable
+                    of demolishing the Kaaba, but he was morally incapable due to the fear of causing a trial in the
+                    people's faith.</p>
+                <p>This موقف نبوي teaches us a precise jurisprudence needed especially in times of tribulation, as
+                    expressed by Sheikh al-Islam Ibn Taymiyyah (<span class="arabic-term">شيخ الإسلام ابن تيمية</span>):
+                    "The wise person is not the one who knows good from evil, but the one who knows the better of two
+                    goods and the worse of two evils." In many cases, the choice is not between pure good and pure evil,
+                    but between a good that carries some harm, or an evil that prevents a greater evil. The wise person
+                    chooses the action whose good outweighs its harm and avoids the action whose harm outweighs its
+                    good,
+                    even if it means tolerating some minor harm. The ignorant person, however, focuses on this minor
+                    harm and condemns its doer, ignoring the great good that was achieved or the greater evil that was
+                    prevented.</p>
+                <p><strong>Evidence:</strong> One of the clearest Quranic proofs of this principle is the story of
+                    Al-Khidr (<span class="arabic-term">الخضر</span>) with Moses (<span
+                        class="arabic-term">موسى</span>),
+                    peace be upon them. Al-Khidr's actions appeared evil and corrupt on the surface, but their inner
+                    reality was to prevent a greater evil. Allah says regarding the scuttling of the boat:
+                <blockquote class="quran-verse">﴾As for the ship, it belonged to poor people working at sea. So I
+                    intended to cause defect in it as there was after them a king who seized every [good] ship by
+                    force.﴿ [Al-Kahf: 79]<br>(﴿أَمَّا السَّفِينَةُ فَكَانَتْ لِمَسَكِينَ يَعْمَلُونَ فِي الْبَحْرِ
+                    فَأَرَدتُّ أَنْ أَعِيبَهَا وَكَانَ وَرَاءَهُم مَّلِكٌ يَأْخُذُ كُلَّ سَفِينَةٍ غَصْبًا﴾)
+                </blockquote>
+                The harm of damaging the ship (a minor evil) was to ward off the harm of it being seized completely (a
+                greater evil).</p>
+
+                <h3>Grounding the Principle in the Quran and Sunnah</h3>
+                <p>This prophetic stance is a practical application of a major jurisprudential principle derived from
+                    the texts of the Sharia: "Warding off harm is مقدم on acquiring benefits."</p>
+                <p><strong>From the Holy Quran:</strong> This principle is clear in Allah's words about wine and
+                    gambling:
+                <blockquote class="quran-verse">﴾They ask you about wine and gambling. Say, "In them is great sin and
+                    [yet, some] benefit for people. But their sin is greater than their benefit."﴿ [Al-Baqarah:
+                    219]<br>(﴿يَسْأَلُونَكَ عَنِ الْخَمْرِ وَالْمَيْسِرِ ۖ قُلْ فِيهِمَا إِثْمٌ كَبِيرٌ وَمَنَافِعُ
+                    لِلنَّاسِ وَإِثْمُهُمَا أَكْبَرُ مِن نَّفْعِهِمَا﴾)</blockquote> Allah acknowledges that there are
+                "benefits" in wine (like trade) and gambling, but He forbade them because their "sin" (the resulting
+                harms of losing one's mind, enmity, and hatred) is greater than their benefit.</p>
+                <p>Another magnificent Quranic proof is the verse:
+                <blockquote class="quran-verse">﴾And do not insult those they invoke other than Allah, lest they insult
+                    Allah in enmity without knowledge.﴿ [Al-An'am: 108]<br>(﴿وَلَا تَسُبُّوا الَّذِينَ يَدْعُونَ مِن
+                    دُونِ اللَّهِ فَيَسُبُّوا اللَّهَ عَدْوًا بِغَيْرِ عِلْمٍ﴾)</blockquote> In this verse, Allah
+                forbids the believers from an apparent benefit—insulting the false gods of the polytheists—to ward off a
+                greater and more dangerous harm: the polytheists responding by insulting Allah out of ignorance and
+                aggression.</p>
+                <p><strong>From the Prophetic Sunnah:</strong> Another application of this principle is the Prophet's
+                    (<span class="arabic-term">صلى الله عليه وسلم</span>) refusal to kill the leader of the hypocrites,
+                    Abdullah ibn Ubayy ibn Salul (<span class="arabic-term">عبد الله بن أبي بن سلول</span>), despite
+                    knowing his hypocrisy and the harm he caused the Muslims. When Umar ibn al-Khattab (<span
+                        class="arabic-term">عمر بن الخطاب</span>) suggested killing him, the Prophet (<span
+                        class="arabic-term">صلى الله عليه وسلم</span>) said: "Leave him, so that people will not say
+                    that Muhammad kills his companions." (Agreed upon - <span class="arabic-term">متفق عليه</span>). The
+                    benefit of killing the hypocrite and warding off his evil was outweighed by the greater harm of
+                    tarnishing Islam's image and deterring people from entering it.</p>
+
+                <h3>What Happened Afterwards?</h3>
+                <p>Interestingly, this prophetic wish was briefly fulfilled during the era of the great companion
+                    Abdullah ibn al-Zubayr (<span class="arabic-term">عبد الله بن الزبير</span>), may Allah be pleased
+                    with them both. When he assumed the caliphate in Mecca, based on his knowledge of the hadith from
+                    his aunt Aisha, he demolished the Kaaba and rebuilt it on the foundations of Abraham, incorporating
+                    the Hijr and giving it two doors at ground level.</p>
+                <p>However, after he was killed by Al-Hajjaj ibn Yusuf al-Thaqafi (<span class="arabic-term">الحجاج بن
+                        يوسف الثقفي</span>), Al-Hajjaj wrote to the Umayyad Caliph Abd al-Malik ibn Marwan (<span
+                        class="arabic-term">عبد الملك بن مروان</span>), who, thinking Ibn al-Zubayr had innovated,
+                    ordered Al-Hajjaj to return the Kaaba to its state during the time of Quraysh. Al-Hajjaj demolished
+                    the added section, sealed the western door, and raised the eastern door.</p>
+                <p>Later, when the Abbasid caliphs learned of the authentic hadith, some of them (like Al-Mahdi or Harun
+                    al-Rashid) wanted to demolish it and rebuild it according to Ibn al-Zubayr's construction. However,
+                    Imam Malik ibn Anas (<span class="arabic-term">الإمام مالك بن أنس</span>) advised against it,
+                    saying his famous words: "O Commander of the Faithful, do not make the Kaaba a plaything for kings,
+                    such that anyone who wishes to change it does so." The caliph heeded his advice, and the Kaaba
+                    remained in its current form, applying the same principle: warding off the harm of tampering with
+                    the
+                    House of Allah and shaking its sanctity in people's hearts took precedence over the benefit of
+                    restoring it to its original form.</p>
+            </section>
+
+            <div class="mind-map-summary">
+                <h4>Recap: Wisdom of the Kaaba's Reconstruction</h4>
+                <ul>
+                    <li><strong>Prophetic Principle:</strong> The decision not to rebuild the Kaaba on its original
+                        Abrahamic foundations teaches a key Islamic legal principle: "Warding off harm takes precedence
+                        over acquiring benefits."</li>
+                    <li><strong>The Dilemma:</strong> The benefit was restoring the Kaaba's original form. The potential
+                        harm was causing a great trial (fitna) for the new Muslims of Quraysh, who might think the
+                        Prophet was destroying their heritage for personal glory, potentially leading them to apostasy.
+                    </li>
+                    <li><strong>The Wisdom:</strong> Preserving the faith of the people was a greater priority than
+                        perfecting the physical structure of the building. This demonstrates a deep understanding of
+                        human psychology and priorities in leadership.</li>
+                    <li><strong>Historical Legacy:</strong> The Kaaba's form has remained, reflecting a consensus on
+                        preventing it from becoming a "plaything for kings," thereby protecting its sanctity.</li>
+                </ul>
+            </div>
+
+            <section id="s8-s2-harbingers" class="content-section">
+                <h2>Harbingers of Dawn: The Great Precursors that Paved the Way for the Final Messenger</h2>
+                <p>The commission of Prophet Muhammad (<span class="arabic-term">صلى الله عليه وسلم</span>) was not a
+                    sudden event in human history but the culmination of divine preparation. These "harbingers" (<span
+                        class="arabic-term">Irhasat - إرهاصات</span>) are the early signs and extraordinary portents
+                    that
+                    precede a prophet's appearance, heralding their imminent mission and alerting minds and hearts to
+                    receive the coming light.</p>
+                <h3>1. The Migration of the Jews to Yathrib: An Anticipation of Prophethood</h3>
+                <p>The presence of significant Jewish tribes (like Banu Qurayza, Banu al-Nadir, and Banu Qaynuqa) in the
+                    heart of the Arabian desert in Yathrib (<span class="arabic-term">المدينة المنورة</span>) was not
+                    random. Their ancestral homeland was in the Levant and Palestine. Their migration was driven by
+                    clear
+                    prophecies in their scriptures about the final prophet, describing his place of migration as a "land
+                    between two harras (volcanic fields) with palm trees." This description perfectly fits Yathrib. They
+                    came to wait for the awaited Prophet, hoping to be the first to believe in and support him, thereby
+                    gaining leadership over the Arabs.</p>
+                <p>This anticipation was part of their daily culture and a psychological weapon against their neighbors,
+                    the tribes of Aws (<span class="arabic-term">الأوس</span>) and Khazraj (<span
+                        class="arabic-term">الخزرج</span>). Whenever they were losing in battle, they would pray for
+                    victory by him, saying, "O Allah, grant us victory over them by the Prophet who will be sent in the
+                    end of times." The Quran describes this precisely:
+                <blockquote class="quran-verse">﴾And when there came to them a Book from Allah confirming that which was
+                    with them - although before they used to pray for victory against those who disbelieved - but when
+                    there came to them that which they recognized, they disbelieved in it. So the curse of Allah is upon
+                    the disbelievers.﴿ [Al-Baqarah: 89]<br>(﴿وَلَمَّا جَاءَهُمْ كِتَابٌ مِّنْ عِندِ اللَّهِ مُصَدِّقٌ
+                    لِّمَا مَعَهُمْ وَكَانُوا مِن قَبْلُ يَسْتَفْتِحُونَ عَلَى الَّذِينَ كَفَرُوا فَلَمَّا جَاءَهُم مَّا
+                    عَرَفُوا كَفَرُوا بِهِ ۚ فَلَعْنَةُ اللَّهِ عَلَى الْكَافِرِينَ﴾)</blockquote>
+                </p>
+                <p>This 'recognition' followed by 'disbelief' is evident in the account of Safiyyah bint Huyayy (<span
+                        class="arabic-term">صفية بنت حيي بن أخطب</span>), who related that after the Prophet's arrival
+                    in
+                    Medina, her father and uncle went to see him. They returned exhausted and disheartened. She heard
+                    her uncle ask her father, "Is it him?" He replied, "Yes, by Allah." The uncle asked, "Do you
+                    recognize him and affirm it?" He replied, "Yes." He then asked, "So what do you feel towards him?"
+                    Her father replied, "Enmity, by Allah, as long as I live." This dialogue reveals that their
+                    disbelief was not from doubt, but from certainty followed by envy and arrogance, making their long
+                    wait a more profound harbinger and a stronger proof against them.</p>
+                <p>By Allah's wisdom, this constant talk of the awaited Prophet prepared the hearts of the people of
+                    Yathrib. When a delegation from Aws and Khazraj met the Prophet (<span class="arabic-term">صلى الله
+                        عليه وسلم</span>) in Mecca, they said to one another, "This is, by Allah, the Prophet whom the
+                    Jews have been warning you about. Do not let them beat you to him." Thus, they were among the
+                    quickest to believe.</p>
+
+                <h3>2. The Guarding of the Heavens with Shooting Stars: Cutting off News from the Unseen</h3>
+                <p>Before the Prophet's mission, divination and soothsaying were widespread, aided by jinn who would
+                    eavesdrop on news from the heavens. They would snatch a word of truth and mix it with a hundred
+                    lies. However, as the Prophet's commission drew near, this cosmic system was fundamentally altered.
+                    The heavens were intensely guarded by angels and shooting stars, completely sealing off the channels
+                    of eavesdropping. This was a divine measure to protect the final revelation from any distortion and
+                    to nullify the arguments of soothsayers. The jinn themselves noticed this sudden and dramatic
+                    change, as the Quran relates from their perspective:
+                <blockquote class="quran-verse">﴾And we have sought [to reach] the heaven but found it filled with
+                    powerful guards and burning flames. * And we used to sit therein in positions for hearing, but
+                    whoever listens now will find a burning flame lying in wait for 1him.﴿ [Al-Jinn: 8-9]<br>(﴿وَأَنَّا
+                    لَمَسْنَا السَّمَاءَ فَوَجَدْنَاهَا مُلِئَتْ حَرَسًا شَدِيدًا وَشُهُبًا * وَأَنَّا كُنَّا نَقْعُدُ
+                    مِنْهَا مَقَاعِدَ لِلسَّمْعِ ۖ فَمَن يَسْتَمِعِ الْآنَ يَجِدْ لَهُ شِهَابًا رَّصَدًا﴾)</blockquote>
+                </p>
+                <p>This cosmic event was not hidden; it was a general phenomenon that caught everyone's attention,
+                    preparing minds for a momentous event that would change the world.</p>
+
+                <h3>3. The True Dream and Love of Seclusion: The Prophet's Spiritual Preparation</h3>
+                <p>The descent of revelation was not abrupt but was preceded by intense spiritual and psychological
+                    preparation for the Prophet (<span class="arabic-term">صلى الله عليه وسلم</span>).</p>
+                <ul>
+                    <li><strong>The True Dream:</strong> Six months before the angel Gabriel's (<span
+                            class="arabic-term">جبريل</span>) arrival, the first stage of revelation began with true
+                        dreams. Aisha (<span class="arabic-term">عائشة</span>) said, "The first with which the
+                        revelation to the Messenger of Allah (<span class="arabic-term">صلى الله عليه وسلم</span>)
+                        began was the true dream in his sleep. He would not see a dream except that it came true like
+                        the breaking of dawn." (Agreed upon - <span class="arabic-term">متفق عليه</span>). These dreams
+                        were a prelude and training for his heart to receive the revelation. The 23 years of prophethood
+                        comprise 46 half-year periods. This six-month phase of true dreams constitutes one of these 46
+                        parts, confirming its status as a form of divine inspiration. The Prophet (<span
+                            class="arabic-term">صلى الله عليه وسلم</span>) said: "The righteous dream is one of the
+                        forty-six parts of prophethood." (Agreed upon - <span class="arabic-term">متفق عليه</span>).
+                    </li>
+                    <li><strong>Love of Seclusion and Worship (Tahannuth):</strong> During this same period, he (<span
+                            class="arabic-term">صلى الله عليه وسلم</span>) was made to love seclusion. Distressed by
+                        the idolatry and corruption he saw, he would retreat to the cave of Hira (<span
+                            class="arabic-term">غار حراء</span>) on the Mountain of Light (<span class="arabic-term">جبل
+                            النور</span>) to spend nights in worship (<span class="arabic-term">yatahannath -
+                            يتحنث</span>). This was not a prescribed form of worship
+                        but a retreat for contemplation, reflection upon the Creator, and purification of the soul. This
+                        seclusion was a necessary "disconnection" from the material world and a deep "connection" with
+                        the spiritual realm to prepare him for the great task ahead.</li>
+                </ul>
+                <p>This seclusion was not an escape from reality but a divine method of nurturing. Mecca was a noisy hub
+                    of trade, poetry, pride, and idolatry. To prepare the Prophet's heart to be a pure vessel for
+                    Allah's word, it first had to be 'emptied' of all this material and social noise. The seclusion in
+                    Hira was a divine isolation of the soul from all earthly influences, allowing it to become pure and
+                    qualified for contact with the celestial assembly. This is Allah's way with His chosen ones; Moses
+                    (<span class="arabic-term">موسى عليه السلام</span>) was appointed for a forty-night seclusion on
+                    Mount Tur before Allah spoke to him directly. For Prophet Muhammad (<span class="arabic-term">صلى
+                        الله عليه وسلم</span>), this seclusion was the stage of purification before the stage of
+                    commissioning.</p>
+
+                <h3>The Momentous Encounter: The Beginning of the Revelation's Descent</h3>
+                <p>On the Night of Decree in that year, while he was in the cave of Hira, Gabriel (<span
+                        class="arabic-term">جبريل عليه السلام</span>) came to him for the first time in the form of a
+                    man. The scene was awe-inspiring and terrifying. The Prophet (<span class="arabic-term">صلى الله
+                        عليه وسلم</span>), alone in a desolate place, was suddenly approached by a stranger who
+                    commanded him, "Read!" (<span class="arabic-term">اقْرَأْ!</span>). The unlettered Prophet, who
+                    could not read, replied, "I am not a reader" (<span class="arabic-term">مَا أَنَا بِقَارِئٍ</span>).
+                </p>
+                <p>Aisha (<span class="arabic-term">رضي الله عنها</span>) describes what happened: "He took me and
+                    embraced me forcefully until I was exhausted, then he released me and said, 'Read!' I said, 'I am
+                    not
+                    a reader.' He took me a second time and embraced me forcefully until I was exhausted, then he
+                    released me and said, 'Read!' I said, 'I am not a reader.' He took me a third time and embraced me,
+                    then he released me and said:
+                <blockquote class="quran-verse">﴾Read in the name of your Lord who created * Created man from a clinging
+                    substance. * Read, and your Lord is the most Generous * Who taught by the pen * Taught man that
+                    which he knew not.﴿ [Al-Alaq: 1-5]<br>
+                    (﴿اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ * خَلَقَ الْإِنسَانَ مِنْ عَلَقٍ * اقْرَأْ وَرَبُّكَ
+                    الْأَكْرَمُ * الَّذِي عَلَّمَ بِالْقَلَمِ * عَلَّمَ الْإِنسَانَ مَا لَمْ يَعْلَمْ﴾)</blockquote>
+                </p>
+                <p>Herein lies one of Islam's greatest miracles: the first word of the final message is "Read," revealed
+                    to an unlettered Prophet in a predominantly illiterate nation. It was a resounding message from the
+                    first moment that this nation would be a nation of knowledge. The message began by establishing that
+                    all knowledge must be connected to God, "in the name of your Lord" (<span
+                        class="arabic-term">بِاسْمِ
+                        رَبِّكَ</span>), directed towards His pleasure.</p>
+                <p>This forceful embrace (<span class="arabic-term">الغط</span>) served several great purposes:</p>
+                <ul>
+                    <li>To awaken all his senses, transitioning him from his normal human state to one of full readiness
+                        to receive the weighty Word of Allah.</li>
+                    <li>To confirm the reality of the encounter, removing any doubt that it was a dream or illusion. It
+                        was a real meeting with a being of immense physical power.</li>
+                    <li>A symbolic gesture, as if to empty his noble heart of all worldly matters to prepare it for what
+                        would fill it with the words of the Lord of the heavens.</li>
+                </ul>
+                <p>He returned to his beloved wife Khadijah (<span class="arabic-term">خديجة رضي الله عنها</span>), his
+                    heart trembling, saying, "Cover me, cover me" (<span class="arabic-term">زَمِّلُونِي،
+                        زَمِّلُونِي</span>). Here, the role of the wise, righteous wife shines. She did not panic but
+                    received him with wisdom and tranquility, speaking her immortal words that were the first to comfort
+                    his heart: "Nay, by Allah, Allah will never disgrace you. You keep good relations with your kith and
+                    kin, help the poor and the destitute, serve your guests generously, and assist those afflicted by
+                    calamity."</p>
+                <p>The stance of Lady Khadijah (<span class="arabic-term">رضي الله عنها</span>) presents an integrated
+                    model of crisis management. Her methodical steps were:</p>
+                <ol>
+                    <li><strong>Immediate Containment:</strong> She responded to his direct request, "Cover me,"
+                        providing physical security first.</li>
+                    <li><strong>Emotional and Rational Stabilization:</strong> After he calmed down, she offered a
+                        logical argument based on his character. She turned his moral record into a source of strength
+                        and reassurance.</li>
+                    <li><strong>Seeking Expert Consultation:</strong> Recognizing the matter was beyond her expertise,
+                        she took him straight to a reliable person of knowledge at that time, her cousin Waraqah ibn
+                        Nawfal.</li>
+                </ol>
+                <p>She was truly a minister of truth on the very first day of prophethood, providing psychological
+                    support, logical analysis, and a practical solution.</p>
+                <p>She then took him to her cousin Waraqah ibn Nawfal (<span class="arabic-term">ورقة بن نوفل</span>),
+                    an elderly man who had become a Christian in the pre-Islamic era and could read the Hebrew
+                    scriptures. When the Prophet (<span class="arabic-term">صلى الله عليه وسلم</span>) told him what he
+                    had seen, Waraqah said without hesitation, "This is the Namus (<span
+                        class="arabic-term">الناموس</span>) whom Allah sent to Moses (<span
+                        class="arabic-term">موسى</span>)." (Namus means the keeper of secrets, referring to Gabriel).
+                    With this, Waraqah connected the message of Muhammad (<span class="arabic-term">صلى الله عليه
+                        وسلم</span>) to that of Moses (<span class="arabic-term">عليه السلام</span>), affirming its
+                    single divine source.</p>
+                <p>But Waraqah did not only bring good tidings; he also warned him, saying words that shocked the
+                    Prophet
+                    (<span class="arabic-term">صلى الله عليه وسلم</span>): "I wish I were young and could be alive when
+                    your people will drive you out." The Prophet (<span class="arabic-term">صلى الله عليه وسلم</span>),
+                    known as the Trustworthy and the Truthful, asked in astonishment, "Will they drive me out?" (<span
+                        class="arabic-term">أوَمُخرجيّ هم؟</span>). Waraqah's reply was a historical law and a divine
+                    custom for the calls of all prophets: "Yes. No man has ever come with what you have brought without
+                    being met with hostility."</p>
+                <p>These words from Waraqah were the first psychological preparation for the Prophet (<span
+                        class="arabic-term">صلى الله عليه وسلم</span>) for the next stage—the stage of proclaiming the
+                    truth and the enmity, persecution, and expulsion that would follow. From the very first day, it was
+                    made known that the path would not be strewn with roses.</p>
+                <p>Here we stand at the threshold of a new era in human history, one that would change the face of the
+                    world forever. In our next session, Allah willing, we will discuss the period of the pause in
+                    revelation, the stages of the secret and public call to Islam, and other related events.</p>
+                <p>May Allah reward you with good.</p>
+            </section>
+            <div class="mind-map-summary">
+                <h4>Recap: The Eve of Revelation</h4>
+                <ul>
+                    <li><strong>Harbingers (Irhasat):</strong> Signs like the Jewish migration to Yathrib, the guarding
+                        of the heavens with shooting stars, and the Prophet's true dreams prepared the world and the
+                        Prophet himself for the final message.</li>
+                    <li><strong>Spiritual Seclusion:</strong> His retreat to the Cave of Hira was a divine preparation,
+                        purifying his soul and connecting him with the spiritual realm, away from the noise of
+                        Jahiliyyah.</li>
+                    <li><strong>The First Revelation:</strong> The encounter with Gabriel in the cave marked the
+                        beginning
+                        of the message with the command "Read!", establishing knowledge as the foundation of Islam.</li>
+                    <li><strong>The First Support System:</strong> Khadijah's wise and comforting response, and
+                        Waraqah's scholarly confirmation, provided the crucial initial support and context for the
+                        Prophet's mission.</li>
+                    <li><strong>The Prophetic Path:</strong> Waraqah's warning foretold the inevitable hostility and
+                        struggle that accompanies the call to truth, preparing the Prophet from day one for the
+                        challenges
+                        ahead.</li>
+                </ul>
+            </div>
+        </article>
     </main>
 
     <footer>
