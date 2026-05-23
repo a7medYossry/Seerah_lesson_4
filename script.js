@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const body = document.body;
     const lessonsButton = document.getElementById('lessons-btn');
     const lessonsDropdown = document.getElementById('lessons-dropdown');
-
+  // 1. تعريف عناصر قائمة الموبايل الجديدة
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navContent = document.getElementById('nav-content');
     // ======================================================
     // 2. إعدادات الثيم (Dark/Light Mode)
     // ======================================================
@@ -75,5 +77,31 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         // في حال كان المتصفح قديمًا
         contentSections.forEach(section => section.classList.add('visible'));
+    }
+
+     // 5. التحكم في قائمة الموبايل (Hamburger Menu)
+    // ======================================================
+    if (hamburgerBtn && navContent) {
+        hamburgerBtn.addEventListener('click', function(event) {
+            event.stopPropagation(); // منع انتقال الضغطة
+            navContent.classList.toggle('active'); // إظهار وإخفاء القائمة
+            
+            // تغيير شكل الزر (اختياري: تحويل ☰ إلى X)
+            if(navContent.classList.contains('active')) {
+                hamburgerBtn.innerHTML = '✖';
+            } else {
+                hamburgerBtn.innerHTML = '☰';
+            }
+        });
+
+        // إغلاق القائمة في الموبايل عند الضغط في أي مكان فارغ بالشاشة
+        window.addEventListener('click', function(event) {
+            if (!hamburgerBtn.contains(event.target) && !navContent.contains(event.target)) {
+                if (navContent.classList.contains('active')) {
+                    navContent.classList.remove('active');
+                    hamburgerBtn.innerHTML = '☰';
+                }
+            }
+        });
     }
 });

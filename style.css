@@ -92,8 +92,13 @@ body.dark-mode header {
     font-family: var(--font-headings);
 }
 
-body.light-mode .nav-logo { color: var(--lm-primary); }
-body.dark-mode .nav-logo { color: var(--dm-primary); }
+body.light-mode .nav-logo {
+    color: var(--lm-primary);
+}
+
+body.dark-mode .nav-logo {
+    color: var(--dm-primary);
+}
 
 #nav-menu {
     list-style: none;
@@ -106,7 +111,7 @@ body.dark-mode .nav-logo { color: var(--dm-primary); }
 
 /* مرجعية القائمة المنسدلة */
 #nav-menu li {
-    position: relative; 
+    position: relative;
 }
 
 /* Styling the Dropdown Button */
@@ -122,13 +127,19 @@ body.dark-mode .nav-logo { color: var(--dm-primary); }
     transition: all 0.3s ease;
 }
 
-body.light-mode .dropbtn { color: var(--lm-text); }
-body.dark-mode .dropbtn { color: var(--dm-text); }
+body.light-mode .dropbtn {
+    color: var(--lm-text);
+}
+
+body.dark-mode .dropbtn {
+    color: var(--dm-text);
+}
 
 body.light-mode .dropbtn:hover {
     background-color: #f0f0f0;
     color: var(--lm-primary);
 }
+
 body.dark-mode .dropbtn:hover {
     background-color: #333944;
     color: var(--dm-primary);
@@ -136,24 +147,26 @@ body.dark-mode .dropbtn:hover {
 
 /* Dropdown Content - Desktop Styles (Centered) */
 .dropdown-content {
-    display: none; /* مخفي افتراضياً */
+    display: none;
+    /* مخفي افتراضياً */
     position: absolute;
-    
+
     /* التمركز تحت الزر وفي المنتصف */
-    top: 100%; 
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     right: auto;
-    
+
     /* الشكل العام */
     min-width: 280px;
     border-radius: 8px;
     z-index: 1001;
-    max-height: 60vh; /* أقصى ارتفاع */
+    max-height: 60vh;
+    /* أقصى ارتفاع */
     overflow-y: auto;
     border: 1px solid;
     margin-top: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* Animation Class added by JS */
@@ -163,8 +176,16 @@ body.dark-mode .dropbtn:hover {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translate(-50%, -10px); } /* تعديل الانيميشن ليتناسب مع التوسيط */
-    to { opacity: 1; transform: translate(-50%, 0); }
+    from {
+        opacity: 0;
+        transform: translate(-50%, -10px);
+    }
+
+    /* تعديل الانيميشن ليتناسب مع التوسيط */
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
 }
 
 /* السهم الصغير فوق القائمة */
@@ -188,8 +209,9 @@ body.light-mode .dropdown-content {
 body.dark-mode .dropdown-content {
     background-color: var(--dm-card-bg);
     border-color: var(--dm-border);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
+
 body.dark-mode .dropdown-content::before {
     border-color: transparent transparent var(--dm-card-bg) transparent;
 }
@@ -199,18 +221,25 @@ body.dark-mode .dropdown-content::before {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     font-size: 0.9rem;
     transition: background 0.2s;
 }
 
-body.light-mode .dropdown-content a { color: var(--lm-text); }
-body.dark-mode .dropdown-content a { color: var(--dm-text); border-bottom-color: rgba(255,255,255,0.05); }
+body.light-mode .dropdown-content a {
+    color: var(--lm-text);
+}
+
+body.dark-mode .dropdown-content a {
+    color: var(--dm-text);
+    border-bottom-color: rgba(255, 255, 255, 0.05);
+}
 
 .dropdown-content a:hover {
     background-color: var(--lm-primary);
     color: white !important;
 }
+
 body.dark-mode .dropdown-content a:hover {
     background-color: var(--dm-primary);
     color: var(--dm-bg) !important;
@@ -245,7 +274,9 @@ main {
     width: 100%;
 }
 
-img, video, iframe {
+img,
+video,
+iframe {
     max-width: 100%;
     height: auto;
 }
@@ -254,7 +285,8 @@ img, video, iframe {
     margin-bottom: 2.5rem;
     padding: 2rem;
     border-radius: 8px;
-    opacity: 0; /* For fade-in */
+    opacity: 0;
+    /* For fade-in */
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
@@ -275,32 +307,87 @@ body.dark-mode .content-section {
 }
 
 /* Typography Styles */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-headings);
     margin-bottom: 1rem;
     margin-top: 1.5rem;
 }
 
-h1 { font-size: 2.2rem; text-align: center; margin-bottom: 2rem; }
-h2 { font-size: 1.8rem; border-bottom: 2px solid; padding-bottom: 0.5rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.3rem; }
-p { margin-bottom: 1rem; }
-ul, ol { margin-bottom: 1rem; padding-left: 1.5rem; }
-li { margin-bottom: 0.5rem; }
+h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul,
+ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
 
 /* Theme Colors for Headings */
-body.light-mode h1, body.light-mode h2, body.light-mode h3 { color: var(--lm-primary); }
-body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: var(--dm-primary); }
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3 {
+    color: var(--lm-primary);
+}
 
-body.light-mode h2 { border-color: var(--lm-accent); }
-body.dark-mode h2 { border-color: var(--dm-accent); }
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: var(--dm-primary);
+}
 
-body.light-mode h4 { color: var(--lm-secondary); }
-body.dark-mode h4 { color: var(--dm-secondary); }
+body.light-mode h2 {
+    border-color: var(--lm-accent);
+}
 
-body.light-mode strong { color: var(--lm-primary); }
-body.dark-mode strong { color: var(--dm-primary); }
+body.dark-mode h2 {
+    border-color: var(--dm-accent);
+}
+
+body.light-mode h4 {
+    color: var(--lm-secondary);
+}
+
+body.dark-mode h4 {
+    color: var(--dm-secondary);
+}
+
+body.light-mode strong {
+    color: var(--lm-primary);
+}
+
+body.dark-mode strong {
+    color: var(--dm-primary);
+}
 
 /* Quotes and Specific Text Styling */
 blockquote {
@@ -312,18 +399,44 @@ blockquote {
     border-radius: 0 5px 5px 0;
 }
 
-.quran-verse { border-left-color: var(--lm-accent); }
-.hadith-text { border-left-color: var(--lm-secondary); }
+.quran-verse {
+    border-left-color: var(--lm-accent);
+}
 
-body.light-mode .quran-verse { background-color: var(--lm-quote-bg); }
-body.dark-mode .quran-verse { background-color: var(--dm-quote-bg); border-left-color: var(--dm-accent); }
+.hadith-text {
+    border-left-color: var(--lm-secondary);
+}
 
-body.light-mode .hadith-text { background-color: var(--lm-hadith-bg); }
-body.dark-mode .hadith-text { background-color: var(--dm-hadith-bg); border-left-color: var(--dm-secondary); }
+body.light-mode .quran-verse {
+    background-color: var(--lm-quote-bg);
+}
 
-.arabic-term { font-style: italic; font-weight: bold; }
-body.light-mode .arabic-term { color: #555; }
-body.dark-mode .arabic-term { color: #bbb; }
+body.dark-mode .quran-verse {
+    background-color: var(--dm-quote-bg);
+    border-left-color: var(--dm-accent);
+}
+
+body.light-mode .hadith-text {
+    background-color: var(--lm-hadith-bg);
+}
+
+body.dark-mode .hadith-text {
+    background-color: var(--dm-hadith-bg);
+    border-left-color: var(--dm-secondary);
+}
+
+.arabic-term {
+    font-style: italic;
+    font-weight: bold;
+}
+
+body.light-mode .arabic-term {
+    color: #555;
+}
+
+body.dark-mode .arabic-term {
+    color: #bbb;
+}
 
 /* Mind Map Summary Boxes */
 .mind-map-summary {
@@ -331,17 +444,23 @@ body.dark-mode .arabic-term { color: #bbb; }
     margin: 2rem 0;
     border-radius: 8px;
     border-left: 5px solid;
-    opacity: 0; /* For animation */
+    opacity: 0;
+    /* For animation */
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-.mind-map-summary.visible { opacity: 1; transform: translateY(0); }
+
+.mind-map-summary.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 body.light-mode .mind-map-summary {
     background-color: var(--lm-mindmap-bg);
     border-color: var(--lm-mindmap-border);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
+
 body.dark-mode .mind-map-summary {
     background-color: var(--dm-mindmap-bg);
     border-color: var(--dm-mindmap-border);
@@ -354,63 +473,173 @@ footer {
     padding: 2rem;
     margin-top: 2rem;
 }
-body.light-mode footer { background-color: #e9ecef; color: var(--lm-secondary); }
-body.dark-mode footer { background-color: #2c313a; color: var(--dm-secondary); }
+
+body.light-mode footer {
+    background-color: #e9ecef;
+    color: var(--lm-secondary);
+}
+
+body.dark-mode footer {
+    background-color: #2c313a;
+    color: var(--dm-secondary);
+}
+
+/* إعدادات زر الهامبرغر (مخفي في شاشات الكمبيوتر) */
+.hamburger-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+body.light-mode .hamburger-btn {
+    color: var(--lm-text);
+}
+
+body.dark-mode .hamburger-btn {
+    color: var(--dm-text);
+}
+
+/* ترتيب الحاوية في شاشات الكمبيوتر */
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
 
 /* =========================================
    Mobile Responsiveness
    ========================================= */
 @media (max-width: 768px) {
-    
-    /* 1. إعداد الناف بار للموبايل */
     #navbar {
-        flex-direction: column;
-        align-items: stretch;
+        justify-content: space-between;
+        /* اللوجو يمين والزر يسار */
+        flex-direction: row;
+        padding: 0.5rem 0.5rem;
     }
+
+    /* إظهار زر القائمة */
+    .hamburger-btn {
+        display: block;
+    }
+
+    /* إخفاء القائمة في البداية وترتيبها بشكل عمودي */
+    .nav-content {
+        display: none;
+        /* مخفية افتراضياً */
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0%;
+        text-align: center;
+    }
+
+    /* هذا الكلاس سيتم إضافته عبر الجافاسكريبت عند الضغط على الزر */
+    .nav-content.active {
+        display: flex;
+        animation: fadeIn 0.3s ease-in-out;
+        flex-direction: row;
+    }
+
+    #nav-menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    #theme-switcher {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0%;
+    }
+
+    /* إعدادات القائمة المنسدلة (Lessons) في الموبايل */
+    #nav-menu li {
+        width: 100%;
+        position: static;
+    }
+
+    .dropbtn {
+        width: 100%;
+        padding: 0rem;
+    }
+
+    .dropdown-content {
+        transform: none;
+        left: 0;
+        top: 0;
+        animation: none;
+        position: relative;
+        width: 100%;
+        margin-top: 5px;
+        box-shadow: none;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-content::before {
+        display: none;
+        /* إخفاء السهم الصغير في الموبايل */
+    }
+
+    body.light-mode .dropdown-content {
+        background-color: #f9f9f9;
+    }
+
+    body.dark-mode .dropdown-content {
+        background-color: #1a1d24;
+    }
+
+
     .nav-logo {
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
     }
+
     #nav-menu {
         flex-direction: column;
         width: 100%;
     }
+
     .dropbtn {
         width: 100%;
         text-align: center;
     }
+
     #theme-switcher {
         width: 100%;
         margin-left: 0;
-        margin-top: 1rem;
+        margin-top: 0%;
     }
 
     /* 2. إصلاح القائمة المنسدلة للموبايل */
     #nav-menu li {
         width: 100%;
-        position: static; /* يلغي مرجعية الزر لجعل القائمة تأخذ عرض الشاشة */
+        position: static;
+        /* يلغي مرجعية الزر لجعل القائمة تأخذ عرض الشاشة */
+        margin-bottom: 0rem;
     }
-    
+
     .dropdown-content {
         /* إلغاء التوسيط والأنيميشن الخاص بالكمبيوتر */
-        transform: none; 
+        transform: none;
         left: 0;
         top: 0;
         animation: none;
-        
+
         /* عرض كامل تحت الزر */
         position: relative;
         width: 100%;
         min-width: auto;
-        
+
         /* مظهر بسيط للموبايل */
         margin-top: 5px;
         box-shadow: none;
-        border: 1px solid rgba(0,0,0,0.1);
+        border: 1px solid rgba(0, 0, 0, 0.1);
         background-color: transparent;
     }
-    
+
     /* إخفاء السهم الصغير في الموبايل */
     .dropdown-content::before {
         display: none;
@@ -420,11 +649,17 @@ body.dark-mode footer { background-color: #2c313a; color: var(--dm-secondary); }
     body.light-mode .dropdown-content {
         background-color: #fff;
     }
+
     body.dark-mode .dropdown-content {
         background-color: #2c313a;
     }
 
     /* تعديل الخطوط */
-    h1 { font-size: 1.8rem; }
-    h2 { font-size: 1.5rem; }
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }
